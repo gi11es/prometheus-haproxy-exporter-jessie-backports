@@ -1,0 +1,17 @@
+Package: golang-google-grpc-dev
+Source: golang-google-grpc
+Version: 1.6.0-3~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 1630
+Depends: golang-github-golang-mock-dev, golang-glog-dev | golang-github-golang-glog-dev, golang-golang-x-net-dev (>= 1:0.0+git20170629), golang-golang-x-oauth2-dev, golang-golang-x-oauth2-google-dev, golang-google-genproto-dev, golang-goprotobuf-dev (>= 0.0~git20161116~)
+Provides: golang-github-grpc-grpc-go-dev
+Section: devel
+Priority: optional
+Homepage: https://godoc.org/google.golang.org/grpc
+Description: implementation of gRPC in Go
+ Implementation of an RPC system called gRPC in Golang.
+ .
+ Remote Procedure Calls (RPCs) provide a useful abstraction for building
+ distributed applications and services. This library provides a concrete
+ implementation of the gRPC protocol, layered over HTTP/2.

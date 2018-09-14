@@ -1,0 +1,73 @@
+golang-github-dgrijalva-jwt-go-v3 (3.1.0-2~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 18:25:31 +0000
+
+golang-github-dgrijalva-jwt-go-v3 (3.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Fri, 11 May 2018 12:26:47 +0900
+
+golang-github-dgrijalva-jwt-go-v3 (3.1.0-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream revision.
+  * Move Vcs-Browser and Vcs-Git to salsa.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 24 Apr 2018 14:10:08 +0900
+
+golang-github-dgrijalva-jwt-go-v3 (3.0.0+v3-1) unstable; urgency=medium
+
+  * Create new package for 3.x
+  * Add myself to uploaders
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 29 Oct 2016 20:44:07 +0530
+
+golang-github-dgrijalva-jwt-go (3.0.0-3) unstable; urgency=medium
+
+  * Reupload to unstable (Closes: #839597) 
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 11 Oct 2016 15:49:06 +0530
+
+golang-github-dgrijalva-jwt-go (3.0.0-2) experimental; urgency=medium
+
+  * Set minimum version of gccgo-6 to 6.2.0-6 (which provides /usr/bin/go)  
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 10 Oct 2016 13:02:59 +0530
+
+golang-github-dgrijalva-jwt-go (3.0.0-1) experimental; urgency=medium
+
+  * Team upload.
+  
+  [ Pirate Praveen ]
+  * New upstream release.
+  * Use golang-any to build
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL.
+  
+  [  Martín Ferrari ]
+  * debian/control: Fix dh-golang version.
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 09 Oct 2016 17:57:01 +0530
+
+golang-github-dgrijalva-jwt-go (2.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/rules: use new --no-binaries option.
+  * debian/control:
+    - Update Standards-Version with no changes.
+    - Require current dh-golang for new features.
+  * Correctly install test files; remove now unneeded patch.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 28 May 2016 11:18:22 +0000
+
+golang-github-dgrijalva-jwt-go (2.3.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #803910)
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 03 Nov 2015 16:11:46 +1100

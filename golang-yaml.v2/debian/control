@@ -1,0 +1,46 @@
+Source: golang-yaml.v2
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Sergio Schvezov <sergio.schvezov@canonical.com>,
+           Martín Ferrari <tincho@debian.org>,
+           Anthony Fok <foka@debian.org>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               dh-golang (>= 1.10),
+               golang-any,
+               golang-gopkg-check.v1-dev,
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-yaml.v2
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-yaml.v2.git
+Homepage: https://github.com/go-yaml/yaml/tree/v2
+XS-Go-Import-Path: gopkg.in/yaml.v2
+
+Package: golang-gopkg-yaml.v2-dev
+Architecture: all
+Depends: golang-gopkg-check.v1-dev,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Provides: golang-yaml.v2-dev,
+Description: YAML support for the Go language
+ The yaml package enables Go programs to very comfortably encode and
+ decode YAML values. It was developed within Canonical as part of the
+ juju project, and is based on a pure Go port of the well-known libyaml
+ C library to parse and generate YAML data quickly and reliably.
+ .
+ The yaml package supports most of YAML 1.1 and 1.2, including support for
+ anchors, tags, map merging, etc. Multi-document unmarshalling is not yet
+ implemented, and base-60 floats from YAML 1.1 are purposefully not supported
+ since they're a poor design and are gone in YAML 1.2.
+ .
+ This package is an incompatible successor to golang-goyaml
+ ("gonuts.org/v1/yaml", and then renamed to "gopkg.in/yaml.v1").
+
+Package: golang-yaml.v2-dev
+Architecture: all
+Section: oldlibs
+Depends: golang-gopkg-yaml.v2-dev,
+         ${misc:Depends},
+Description: Transitional package for golang-gopkg-yaml.v2-dev
+ This is a transitional package to ease upgrades to the
+ golang-gopkg-yaml.v2-dev package. It can safely be removed.

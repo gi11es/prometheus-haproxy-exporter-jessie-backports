@@ -1,0 +1,13 @@
+There's a circular dependency in this package, it has
+golang-google-genproto-dev in Build-Depends, which depends this package
+as well.
+
+To break this, we vendor three files from golang-google-genproto-dev, which are
+debian/vendor/google.golang.org/genproto/googleapis/rpc/code/code.pb.go
+debian/vendor/google.golang.org/genproto/googleapis/rpc/status/status.pb.go
+debian/vendor/google.golang.org/genproto/googleapis/rpc/errdetails/error_details.pb.go
+
+Currently the version of vendored files from golang-google-genproto-dev is
+0.0~git20170731.0.09f6ed2-1
+
+ -- Shengjing Zhu <i@zhsj.me>  Wed, 13 Sep 2017 00:29:14 +0800

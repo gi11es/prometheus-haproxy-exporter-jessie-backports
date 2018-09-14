@@ -1,0 +1,26 @@
+golang-github-go-kit-kit (0.6.0-3~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/control
+      - Updated minimum version of golang-google-grpc-dev to 1.6.0.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 18:31:06 +0000
+
+golang-github-go-kit-kit (0.6.0-3) UNRELEASED; urgency=medium
+
+  * Point Vcs-* urls to salsa.debian.org.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 02 Apr 2018 16:47:39 -0400
+
+golang-github-go-kit-kit (0.6.0-2) unstable; urgency=medium
+
+  * Rework debian/copyright for proper attribution, as the previous upload was
+    rejected for this reason.
+
+ -- Martín Ferrari <tincho@debian.org>  Tue, 12 Dec 2017 07:13:20 +0000
+
+golang-github-go-kit-kit (0.6.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #883825)
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 07 Dec 2017 22:50:22 +0000

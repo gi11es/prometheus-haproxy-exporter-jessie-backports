@@ -1,0 +1,2 @@
+# Un-buildable example (# cannot find package "gopkg.in/gemnasium/logrus-airbrake-hook.v2"):
+example_hook_test.go

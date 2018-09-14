@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:29:08 +0000
+Source: golang-github-go-stack-stack
+Binary: golang-github-go-stack-stack-dev
+Architecture: source all
+Version: 1.5.2-3~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-go-stack-stack-dev - capture, manipulate, and format call stacks
+Changes:
+ golang-github-go-stack-stack (1.5.2-3~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ ada30a3bf245f9c570bfca9c16ed5cce308635ef 1375 golang-github-go-stack-stack_1.5.2-3~bpo8+1.dsc
+ b7bb80f07eb55d8f0e94cb5f6ddbb0159ec213ea 2448 golang-github-go-stack-stack_1.5.2-3~bpo8+1.debian.tar.xz
+ 3431143dfc04c0444d65b32ce96297c301a99664 7176 golang-github-go-stack-stack-dev_1.5.2-3~bpo8+1_all.deb
+Checksums-Sha256:
+ fddc27de2b6b19c204976999fe3566bf55143b30a87d0c8e20bd79f568e505c0 1375 golang-github-go-stack-stack_1.5.2-3~bpo8+1.dsc
+ c21f2d360f43dd007036bd0888d14879439448f36ede672323461db506082396 2448 golang-github-go-stack-stack_1.5.2-3~bpo8+1.debian.tar.xz
+ 111b80de60609f4f0bd144d98bcfc18d8214e1a639109389dce92c61720f2d37 7176 golang-github-go-stack-stack-dev_1.5.2-3~bpo8+1_all.deb
+Files:
+ bcab320c3580f6021b1383c2e6283412 1375 devel extra golang-github-go-stack-stack_1.5.2-3~bpo8+1.dsc
+ ad601a0ed4a2e9f11354620535188d92 2448 devel extra golang-github-go-stack-stack_1.5.2-3~bpo8+1.debian.tar.xz
+ 52f839b181a7e7a601f00f69f57f9af9 7176 devel extra golang-github-go-stack-stack-dev_1.5.2-3~bpo8+1_all.deb

@@ -1,0 +1,51 @@
+Package: golang-golang-x-net-dev
+Version: 1:0.0+git20170629.c81e7f2+dfsg-2~bpo8+1
+Architecture: all
+Maintainer: Debian Go packaging team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 3648
+Depends: golang-x-text-dev
+Breaks: golang-go.net-dev (<< 0.0+git20150226.3d87fd6-2~)
+Replaces: golang-go.net-dev (<< 0.0+git20150226.3d87fd6-2~)
+Provides: golang-go.net-dev
+Section: devel
+Priority: optional
+Homepage: https://godoc.org/golang.org/x/net
+Description: Supplementary Go networking libraries
+ Supplementary Go networking libraries (golang.org/x/net) not included in the
+ main distribution:
+ .
+   - context: Package context defines the Context type, which carries
+     deadlines, cancellation signals, and other request-scoped values across API
+     boundaries and between processes.
+   - dict: Package dict implements the Dictionary Server Protocol as defined in
+     RFC 2229.
+   - html: Package html implements an HTML5-compliant tokenizer and parser.
+   - html/atom: Package atom provides integer codes (also known as atoms) for a
+     fixed set of frequently occurring HTML strings: tag names and attribute
+     keys such as "p" and "id".
+   - html/charset: Package charset provides common text encodings for HTML
+     documents.
+   - icmp: Package icmp provides basic functions for the manipulation of
+     messages used in the Internet Control Message Protocols, ICMPv4 and
+     ICMPv6.
+   - idna: Package idna implements IDNA2008 (Internationalized Domain Names for
+     Applications), defined in RFC 5890, RFC 5891, RFC 5892, RFC 5893 and RFC
+     5894.
+   - internal/iana: Package iana provides protocol number resources managed by
+     the Internet Assigned Numbers Authority (IANA).
+   - internal/nettest: Package nettest provides utilities for IP testing.
+   - ipv4: Package ipv4 implements IP-level socket options for the Internet
+     Protocol version 4.
+   - ipv6: Package ipv6 implements IP-level socket options for the Internet
+     Protocol version 6.
+   - netutil: Package netutil provides network utility functions, complementing
+     the more common ones in the net package.
+   - proxy: Package proxy provides support for a variety of protocols to proxy
+     network data.
+   - publicsuffix: Package publicsuffix provides a public suffix list based on
+     data from http://publicsuffix.org/.
+   - webdav: Package webdav.
+   - websocket: Package websocket implements a client and server for the
+     WebSocket protocol as specified in RFC 6455.
+ .
+ This repository was previously available at https://code.google.com/p/go.net/

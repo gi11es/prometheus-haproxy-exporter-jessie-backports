@@ -1,0 +1,4 @@
+*.debhelper.log
+*.substvars
+golang-logrus-dev/
+files

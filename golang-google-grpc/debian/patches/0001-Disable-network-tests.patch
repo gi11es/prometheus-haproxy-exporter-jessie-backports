@@ -1,0 +1,29 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Thu, 7 Sep 2017 14:41:40 +0800
+Subject: Disable network tests
+
+Signed-off-by: Shengjing Zhu <i@zhsj.me>
+---
+ clientconn_test.go | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/clientconn_test.go b/clientconn_test.go
+index bdaf3df..f25f8ac 100644
+--- a/clientconn_test.go
++++ b/clientconn_test.go
+@@ -84,6 +84,7 @@ func TestConnectivityStates(t *testing.T) {
+ }
+ 
+ func TestDialTimeout(t *testing.T) {
++	t.Skip("Disable test that accesses the network.")
+ 	conn, err := Dial("Non-Existent.Server:80", WithTimeout(time.Millisecond), WithBlock(), WithInsecure())
+ 	if err == nil {
+ 		conn.Close()
+@@ -94,6 +95,7 @@ func TestDialTimeout(t *testing.T) {
+ }
+ 
+ func TestTLSDialTimeout(t *testing.T) {
++	t.Skip("Disable test that accesses the network.")
+ 	creds, err := credentials.NewClientTLSFromFile(testdata.Path("ca.pem"), "x.test.youtube.com")
+ 	if err != nil {
+ 		t.Fatalf("Failed to create credentials %v", err)

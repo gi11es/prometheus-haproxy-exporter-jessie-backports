@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/golang-github-go-stack-stack-$1\.tar\.gz/ \
+  https://github.com/go-stack/stack/tags .*/v?(\d\S*)\.tar\.gz

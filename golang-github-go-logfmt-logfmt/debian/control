@@ -1,0 +1,33 @@
+Source: golang-github-go-logfmt-logfmt
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Martín Ferrari <tincho@debian.org>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: extra
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any,
+Standards-Version: 4.1.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-go-logfmt-logfmt
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-go-logfmt-logfmt.git
+Homepage: https://github.com/go-logfmt/logfmt
+XS-Go-Import-Path: github.com/go-logfmt/logfmt
+
+Package: golang-github-go-logfmt-logfmt-dev
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Marshals and unmarshals logfmt messages
+ Package logfmt implements utilities to marshal and unmarshal data in the
+ logfmt format (https://brandur.org/logfmt). It provides an API similar
+ to encoding/json (http://golang.org/pkg/encoding/json/) and encoding/xml
+ (http://golang.org/pkg/encoding/xml/).
+ .
+ The logfmt format has not been formally standardized. The most authoritative
+ public specification to date has been the documentation of a Go Language
+ package (http://godoc.org/github.com/kr/logfmt) written by Blake Mizerany and
+ Keith Rarick.
+ .
+ This project attempts to conform as closely as possible to the prior art,
+ while also removing ambiguity where necessary to provide well behaved encoder
+ and decoder implementations.

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 02 Apr 2018 16:51:13 -0400
+Source: golang-github-go-logfmt-logfmt
+Binary: golang-github-go-logfmt-logfmt-dev
+Architecture: source all
+Version: 0.3.0-2
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Alexandre Viau <aviau@debian.org>
+Description:
+ golang-github-go-logfmt-logfmt-dev - Marshals and unmarshals logfmt messages
+Changes:
+ golang-github-go-logfmt-logfmt (0.3.0-2) UNRELEASED; urgency=medium
+ .
+   * Point Vcs-* urls to salsa.debian.org.
+Checksums-Sha1:
+ 7d37bc53a7c143d2ef0e99c0658c1659fc1ca9cf 1379 golang-github-go-logfmt-logfmt_0.3.0-2.dsc
+ fd48afd2dd158867131e840f5737ee0c0b76de18 3976 golang-github-go-logfmt-logfmt_0.3.0-2.debian.tar.xz
+ 5886355cb714b32018e62c7a43233ab8657215e5 12644 golang-github-go-logfmt-logfmt-dev_0.3.0-2_all.deb
+Checksums-Sha256:
+ 6b6e1f23eebac656c1a1b7c28aaf3659ab0279c60ff6b98c03081f99007d136d 1379 golang-github-go-logfmt-logfmt_0.3.0-2.dsc
+ baa0fcd184a4a5aa9d357e7fe632707c85054587631d13c197c1e83af958aade 3976 golang-github-go-logfmt-logfmt_0.3.0-2.debian.tar.xz
+ c480010f1a989e1fd42477aac46840b807c5c33159ebd2eaf3113c73f2079597 12644 golang-github-go-logfmt-logfmt-dev_0.3.0-2_all.deb
+Files:
+ bf21c952735115bd317fbc2378c6f9ea 1379 devel extra golang-github-go-logfmt-logfmt_0.3.0-2.dsc
+ d5effaad414b8e86c18ac5ac071c7202 3976 devel extra golang-github-go-logfmt-logfmt_0.3.0-2.debian.tar.xz
+ 74f3822dc3c07723afea5f5e42fe0b3f 12644 devel extra golang-github-go-logfmt-logfmt-dev_0.3.0-2_all.deb

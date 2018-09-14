@@ -1,0 +1,13 @@
+Package: prometheus-haproxy-exporter
+Version: 0.9.0-1~bpo8+1
+Architecture: amd64
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Installed-Size: 6425
+Depends: libc6 (>= 2.3.2)
+Built-Using: golang-1.7 (= 1.7.4-1~bpo8+2), golang-github-alecthomas-units (= 0.0~git20151022.0.2efee85-3~bpo8+1), golang-github-beorn7-perks (= 0.0~git20160804.0.4c0e845-1~bpo8+1), golang-github-prometheus-client-golang (= 0.8.0-1~bpo8+1), golang-github-prometheus-client-model (= 0.0.2+git20150212.12.fa8ad6f-2~bpo8+1), golang-github-prometheus-common (= 0+git20180518.7600349-1~bpo8+1), golang-go.crypto (= 1:0.0~git20170407.0.55a552f+REALLY.0.0~git20161012.0.5f31782-1~bpo8+1), golang-golang-x-sys (= 0.0~git20161122.0.30237cf-1~bpo8+2), golang-gopkg-alecthomas-kingpin.v2 (= 2.2.6-1~bpo8+1), golang-goprotobuf (= 0.0~git20161116.0.224aaba-3~bpo8+1), golang-logrus (= 1.0.6-1~bpo8+1), golang-procfs (= 0+git20161206.fcdb11c-1~bpo8+1), golang-protobuf-extensions (= 1.0.0-2~bpo8+1)
+Section: devel
+Priority: optional
+Homepage: https://github.com/prometheus/haproxy_exporter
+Description: HAProxy Exporter for Prometheus
+ Simple server that scrapes HAProxy stats and exports them via HTTP for
+ Prometheus consumption.

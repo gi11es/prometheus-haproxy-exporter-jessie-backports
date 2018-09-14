@@ -1,0 +1,9 @@
+libprotobuf10_3.0.0-9.1~bpo8+1_amd64.deb libs optional
+libprotobuf-lite10_3.0.0-9.1~bpo8+1_amd64.deb libs optional
+libprotobuf-dev_3.0.0-9.1~bpo8+1_amd64.deb libdevel optional
+libprotoc10_3.0.0-9.1~bpo8+1_amd64.deb libs optional
+libprotoc-dev_3.0.0-9.1~bpo8+1_amd64.deb libdevel optional
+protobuf-compiler_3.0.0-9.1~bpo8+1_amd64.deb devel optional
+python-protobuf_3.0.0-9.1~bpo8+1_amd64.deb python optional
+python3-protobuf_3.0.0-9.1~bpo8+1_amd64.deb python optional
+libprotobuf-java_3.0.0-9.1~bpo8+1_all.deb java optional

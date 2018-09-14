@@ -1,0 +1,12 @@
+4a4b52d4f6ecaced7c3467a914c2b3f6  usr/share/doc/golang-github-go-logfmt-logfmt-dev/changelog.Debian.gz
+8da40806cbb554de17a5a7b392202eb4  usr/share/doc/golang-github-go-logfmt-logfmt-dev/copyright
+6bf926ae8c69d3b18510d373039d3acb  usr/share/gocode/src/github.com/go-logfmt/logfmt/decode-bench_test.go
+0c90078ce91fad64f49f0cd613fd170c  usr/share/gocode/src/github.com/go-logfmt/logfmt/decode.go
+3d1e913c9da33512656626cd0e4d1b4a  usr/share/gocode/src/github.com/go-logfmt/logfmt/decode_test.go
+1aa7e47b6fc4ac2a9dd321164ae53d88  usr/share/gocode/src/github.com/go-logfmt/logfmt/doc.go
+e3cbe185c3ae82b1863bcde91c4e8d7b  usr/share/gocode/src/github.com/go-logfmt/logfmt/encode.go
+b51e8cab032b8aae51133a31045e1238  usr/share/gocode/src/github.com/go-logfmt/logfmt/encode_internal_test.go
+abc8bfe972bd9138daeba23d9ba4fe89  usr/share/gocode/src/github.com/go-logfmt/logfmt/encode_test.go
+f587e5acf0d4bf4ebbcfeb3c4ddb2701  usr/share/gocode/src/github.com/go-logfmt/logfmt/example_test.go
+9282ca90ca170f659d025973fdd7ff70  usr/share/gocode/src/github.com/go-logfmt/logfmt/fuzz.go
+f61c2878fc126e87f6f28de470a27c86  usr/share/gocode/src/github.com/go-logfmt/logfmt/jsonstring.go

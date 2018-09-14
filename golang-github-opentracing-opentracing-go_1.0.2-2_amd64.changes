@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 02 Apr 2018 19:54:00 -0400
+Source: golang-github-opentracing-opentracing-go
+Binary: golang-github-opentracing-opentracing-go-dev
+Architecture: source all
+Version: 1.0.2-2
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Alexandre Viau <aviau@debian.org>
+Description:
+ golang-github-opentracing-opentracing-go-dev - Go platform API for OpenTracing
+Changes:
+ golang-github-opentracing-opentracing-go (1.0.2-2) UNRELEASED; urgency=medium
+ .
+   * Point Vcs-* urls to salsa.debian.org.
+Checksums-Sha1:
+ 9b7c0a71d7ca5914f26530ecca0d4c9e969ab6f3 1569 golang-github-opentracing-opentracing-go_1.0.2-2.dsc
+ 31f0c177b9fc4fcbb2ae8a6eb76ed8fe34d276da 2656 golang-github-opentracing-opentracing-go_1.0.2-2.debian.tar.xz
+ 9e967ca093b56315431bd920c9b1ce5ce0cc8f99 21934 golang-github-opentracing-opentracing-go-dev_1.0.2-2_all.deb
+Checksums-Sha256:
+ d3c5c47f39736f390f9fae895b73dd57587ed8a8b5e32a49e4bcf46a01d713db 1569 golang-github-opentracing-opentracing-go_1.0.2-2.dsc
+ 8f646321a62ad7e1643c86f26d5560e518471e1ca728de3871f85f080c1b0500 2656 golang-github-opentracing-opentracing-go_1.0.2-2.debian.tar.xz
+ 5567e9afe7667d0118362110c53abde2f81bd466bd2ff5f3c73c88b71d36dc9f 21934 golang-github-opentracing-opentracing-go-dev_1.0.2-2_all.deb
+Files:
+ 64a87fe9293d6f9bdb03dec9a49017ad 1569 devel extra golang-github-opentracing-opentracing-go_1.0.2-2.dsc
+ f547d8096830839a27101e99307a0157 2656 devel extra golang-github-opentracing-opentracing-go_1.0.2-2.debian.tar.xz
+ b404106d171250e88a89c73c14e28f7b 21934 devel extra golang-github-opentracing-opentracing-go-dev_1.0.2-2_all.deb

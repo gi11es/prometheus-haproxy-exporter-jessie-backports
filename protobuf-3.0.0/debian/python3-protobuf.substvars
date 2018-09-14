@@ -1,0 +1,6 @@
+python3:Provides=python3.4-protobuf
+python3:Versions=3.4
+python3:Depends=python3 (<< 3.5), python3 (>= 3.4~), python3-pkg-resources, python3-six, python3:any (>= 3.3.2-2~)
+shlibs:Depends=libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libprotobuf10, libstdc++6 (>= 4.3)
+misc:Depends=
+misc:Pre-Depends=

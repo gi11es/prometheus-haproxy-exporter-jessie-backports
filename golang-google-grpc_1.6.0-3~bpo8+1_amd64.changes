@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 14 Sep 2018 07:06:28 +0000
+Source: golang-google-grpc
+Binary: golang-google-grpc-dev
+Architecture: source all
+Version: 1.6.0-3~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-google-grpc-dev - implementation of gRPC in Go
+Changes:
+ golang-google-grpc (1.6.0-3~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ e394565385e85f9f160639b2b8e200ce7f521410 1678 golang-google-grpc_1.6.0-3~bpo8+1.dsc
+ 6013a764532b486ef36323f25fcf970f70890d59 15452 golang-google-grpc_1.6.0-3~bpo8+1.debian.tar.xz
+ aa6d03d18e9b5536d79633b9567ffd46085b6410 222880 golang-google-grpc-dev_1.6.0-3~bpo8+1_all.deb
+Checksums-Sha256:
+ 67e52b6b7ff07ecd295b3bba67f6545cbd923ebe271a942a73dfd0eb88a4270e 1678 golang-google-grpc_1.6.0-3~bpo8+1.dsc
+ 323498329e7f6539e5d141160c9d4037fa33090d5bbc6e7224339b5924656139 15452 golang-google-grpc_1.6.0-3~bpo8+1.debian.tar.xz
+ fd4180722b83d30a6d9513556595d10e10d1f951c5fe9475608253d7acb6abc8 222880 golang-google-grpc-dev_1.6.0-3~bpo8+1_all.deb
+Files:
+ 656163c6633ece62e08fbfe994250ce2 1678 devel optional golang-google-grpc_1.6.0-3~bpo8+1.dsc
+ 68acfa0c7afd4dee9fa562db866bb2ef 15452 devel optional golang-google-grpc_1.6.0-3~bpo8+1.debian.tar.xz
+ 0e2c7efa131991480e6a52140d0a9b29 222880 devel optional golang-google-grpc-dev_1.6.0-3~bpo8+1_all.deb

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:31:06 +0000
+Source: golang-github-go-kit-kit
+Binary: golang-github-go-kit-kit-dev
+Architecture: source all
+Version: 0.6.0-3~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-go-kit-kit-dev - Programming toolkit for microservices
+Changes:
+ golang-github-go-kit-kit (0.6.0-3~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 9ed1f40c85551de4ff76544740b0f954eec6238d 1592 golang-github-go-kit-kit_0.6.0-3~bpo8+1.dsc
+ 9a8f57c410af95437b9d9e8584ee86457c81a53c 3884 golang-github-go-kit-kit_0.6.0-3~bpo8+1.debian.tar.xz
+ 30183616d4daed3bbabff95e6745994ff928ba2b 104012 golang-github-go-kit-kit-dev_0.6.0-3~bpo8+1_all.deb
+Checksums-Sha256:
+ 124e1fd0a28730712b58bdb8da4303d50251036b10a8e573c650efb574734b3a 1592 golang-github-go-kit-kit_0.6.0-3~bpo8+1.dsc
+ 0173bf03910b16ac4448be56e2b8cdb8d6f2f8c0e10e3dcbc182176617a2c63f 3884 golang-github-go-kit-kit_0.6.0-3~bpo8+1.debian.tar.xz
+ 9def08e40f4c337c90fabeb46f7d21ee42f3cbd6818475050609e65bc996cd33 104012 golang-github-go-kit-kit-dev_0.6.0-3~bpo8+1_all.deb
+Files:
+ 6ceacaede99c5c452c4510de0bf5cbd5 1592 devel optional golang-github-go-kit-kit_0.6.0-3~bpo8+1.dsc
+ 4ffba9ec50ae219cb47fa4fd6aa11bc5 3884 devel optional golang-github-go-kit-kit_0.6.0-3~bpo8+1.debian.tar.xz
+ f6d5c7bd2f31f71efbed13a9c38015ad 104012 devel optional golang-github-go-kit-kit-dev_0.6.0-3~bpo8+1_all.deb

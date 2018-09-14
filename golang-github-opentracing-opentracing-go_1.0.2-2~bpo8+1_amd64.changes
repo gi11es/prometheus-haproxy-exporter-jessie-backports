@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:28:07 +0000
+Source: golang-github-opentracing-opentracing-go
+Binary: golang-github-opentracing-opentracing-go-dev
+Architecture: source all
+Version: 1.0.2-2~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-opentracing-opentracing-go-dev - Go platform API for OpenTracing
+Changes:
+ golang-github-opentracing-opentracing-go (1.0.2-2~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 9fb462e7629f25f8c813d28dc1ecf2bff2546ff8 1597 golang-github-opentracing-opentracing-go_1.0.2-2~bpo8+1.dsc
+ 70135a0e9d99a9591c33eeccafd82913ec40cb9a 2736 golang-github-opentracing-opentracing-go_1.0.2-2~bpo8+1.debian.tar.xz
+ 6f2846a18298f8c32dee463ed5e76597932c5d67 22010 golang-github-opentracing-opentracing-go-dev_1.0.2-2~bpo8+1_all.deb
+Checksums-Sha256:
+ f53c01b66f1ff0a4acd45847ccfd75273fa890bfe1523cde8f5f002aa943e230 1597 golang-github-opentracing-opentracing-go_1.0.2-2~bpo8+1.dsc
+ 7b17a1de7d9e8dd5619591a7825ddf329f25607371433fd483cec82665268dbc 2736 golang-github-opentracing-opentracing-go_1.0.2-2~bpo8+1.debian.tar.xz
+ eecfc7ce056cf6f18e0aec49615ce74ef50417459fe20eea103333469951ece0 22010 golang-github-opentracing-opentracing-go-dev_1.0.2-2~bpo8+1_all.deb
+Files:
+ 9d31f473d9a92cb6b9332069af7c5b89 1597 devel extra golang-github-opentracing-opentracing-go_1.0.2-2~bpo8+1.dsc
+ 123a0154ad8a7c39e502e4f4891f5fa1 2736 devel extra golang-github-opentracing-opentracing-go_1.0.2-2~bpo8+1.debian.tar.xz
+ 3793d3bffb1b4a062ead5da4b96c4adc 22010 devel extra golang-github-opentracing-opentracing-go-dev_1.0.2-2~bpo8+1_all.deb

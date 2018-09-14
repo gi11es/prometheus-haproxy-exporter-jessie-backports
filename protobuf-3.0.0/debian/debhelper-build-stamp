@@ -1,0 +1,9 @@
+libprotobuf10
+libprotobuf-lite10
+libprotobuf-dev
+libprotoc10
+libprotoc-dev
+protobuf-compiler
+python-protobuf
+python3-protobuf
+libprotobuf-java

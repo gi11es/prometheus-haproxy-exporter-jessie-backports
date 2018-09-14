@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:07:40 +0000
+Source: golang-github-prometheus-common
+Binary: golang-github-prometheus-common-dev
+Architecture: source all
+Version: 0+git20180518.7600349-1~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-prometheus-common-dev - Common libraries for Prometheus components
+Changes:
+ golang-github-prometheus-common (0+git20180518.7600349-1~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 2676ee899c08259466908acb9bc00ae94836c04f 1930 golang-github-prometheus-common_0+git20180518.7600349-1~bpo8+1.dsc
+ a56d256b43672516db62339b7214cee5a1d908b5 5052 golang-github-prometheus-common_0+git20180518.7600349-1~bpo8+1.debian.tar.xz
+ d798aa067c60efa35ed9728849c0a1945b4c59ea 66396 golang-github-prometheus-common-dev_0+git20180518.7600349-1~bpo8+1_all.deb
+Checksums-Sha256:
+ 73b843dffdd5f82804a90f50acda68ecad9a429064e1abf6fa2ac31606a89ed2 1930 golang-github-prometheus-common_0+git20180518.7600349-1~bpo8+1.dsc
+ de6bfbb995cd89185c9cb5b4942b8e9645ca8265678e6e945fcf36d95132505a 5052 golang-github-prometheus-common_0+git20180518.7600349-1~bpo8+1.debian.tar.xz
+ e7aa71ab16720939096dba63d3393ec1272a5015a05dee282ea55be96119fc52 66396 golang-github-prometheus-common-dev_0+git20180518.7600349-1~bpo8+1_all.deb
+Files:
+ 47621e376d6bf95bdd9fb20a57f6d6e5 1930 devel optional golang-github-prometheus-common_0+git20180518.7600349-1~bpo8+1.dsc
+ 8a1a389b5dc1d6d013cbcde8a3b7e021 5052 devel optional golang-github-prometheus-common_0+git20180518.7600349-1~bpo8+1.debian.tar.xz
+ 1c9842f7c8e8009cdf909e3c5765d796 66396 devel optional golang-github-prometheus-common-dev_0+git20180518.7600349-1~bpo8+1_all.deb

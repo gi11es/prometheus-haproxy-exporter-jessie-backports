@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 14 Sep 2018 07:18:56 +0000
+Source: golang-logrus
+Binary: golang-github-sirupsen-logrus-dev golang-logrus-dev
+Architecture: source all
+Version: 1.0.6-1~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-sirupsen-logrus-dev - Logrus: a logging library for Go
+ golang-logrus-dev - Transitional package for golang-github-sirupsen-logrus-dev
+Changes:
+ golang-logrus (1.0.6-1~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ e0f3c425695f201bd8173988dd06c2e4c058043f 1455 golang-logrus_1.0.6-1~bpo8+1.dsc
+ bec9a411ce31cf461c12ddafc14ba27bf329ae56 5188 golang-logrus_1.0.6-1~bpo8+1.debian.tar.xz
+ 9f7677ce2a3f3bf4c000ea8f47100907d8eb80a9 31864 golang-github-sirupsen-logrus-dev_1.0.6-1~bpo8+1_all.deb
+ 16831fb113335e3039c10d93dafe9774dd062f49 4838 golang-logrus-dev_1.0.6-1~bpo8+1_all.deb
+Checksums-Sha256:
+ 79a8cb986a358273b9f4a2b5869f0cc4caf478dde5e836e6629eb27644874679 1455 golang-logrus_1.0.6-1~bpo8+1.dsc
+ c35a74639646c723d6f49c5a75e3e8d69c3b056b1d4748bdd4daca08da863dba 5188 golang-logrus_1.0.6-1~bpo8+1.debian.tar.xz
+ c9c566c39063ce4be2647f98360978a653b0e27be985908748c61c03ff516d80 31864 golang-github-sirupsen-logrus-dev_1.0.6-1~bpo8+1_all.deb
+ 6831d21bf64aad5394e3197008409b7e7f230ff69b1bf3b7c8c2807122de30d0 4838 golang-logrus-dev_1.0.6-1~bpo8+1_all.deb
+Files:
+ 9c2583d377acda70157b6459d4e0b2d2 1455 devel optional golang-logrus_1.0.6-1~bpo8+1.dsc
+ f5c7268dac3b2f4efec7bcdbaa52192f 5188 devel optional golang-logrus_1.0.6-1~bpo8+1.debian.tar.xz
+ 470360bf25f00d601a69dbfcad662052 31864 devel optional golang-github-sirupsen-logrus-dev_1.0.6-1~bpo8+1_all.deb
+ bd44c524c14b73feba93fb41fead3335 4838 oldlibs optional golang-logrus-dev_1.0.6-1~bpo8+1_all.deb

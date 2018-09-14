@@ -1,0 +1,2 @@
+dir_to_symlink /usr/share/gocode/src/github.com/Sirupsen/logrus ../sirupsen/logrus 1.0.2-2~
+symlink_to_dir /usr/share/gocode/src/github.com/sirupsen/logrus ../Sirupsen/logrus 1.0.2-2~

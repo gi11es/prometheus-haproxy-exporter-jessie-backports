@@ -1,0 +1,17 @@
+56e27b6c813365a59d4c223baa53a8e6  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/README.md.gz
+87e6aa9b4b8afa8b853bb2457d57ed37  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/changelog.Debian.gz
+3382ed96ab4f79dbabf88b14306eddda  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/copyright
+e5dd1279671839eb070c841ad8c1680f  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/examples/certs/gen_cert.sh
+2baac45fbda534b2c6a58f26c08e2fb5  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/examples/certs/localhost.crt
+6c2864896c640b76a952b1341ee54c4f  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/examples/certs/localhost.key
+bca18c292946030c6c82b9ccf57da972  usr/share/doc/golang-github-mwitkow-go-conntrack-dev/examples/server.go
+f0c0138f8d14d51c1b4c36cb50d4ab16  usr/share/gocode/src/github.com/mwitkow/go-conntrack/connhelpers/tls.go
+3f4336aa55d5e6d0399ebaec24bfa677  usr/share/gocode/src/github.com/mwitkow/go-conntrack/dialer_reporter.go
+6fb2aa40c36c05a140074b85686488a5  usr/share/gocode/src/github.com/mwitkow/go-conntrack/dialer_test.go
+1c44f14f68c6c6f6220a8d565099a0dc  usr/share/gocode/src/github.com/mwitkow/go-conntrack/dialer_wrapper.go
+bca18c292946030c6c82b9ccf57da972  usr/share/gocode/src/github.com/mwitkow/go-conntrack/example/server.go
+439e431eb79c7426b0683188d3f565f7  usr/share/gocode/src/github.com/mwitkow/go-conntrack/listener_reporter.go
+b2c057d21b1c4e463b3742fd1f3cd60e  usr/share/gocode/src/github.com/mwitkow/go-conntrack/listener_test.go
+fd4d6fc1322ad2a238c99a7ab1992139  usr/share/gocode/src/github.com/mwitkow/go-conntrack/listener_wrapper.go
+c4d23e43d7e59ebcb46403c86beaefb2  usr/share/gocode/src/github.com/mwitkow/go-conntrack/promhelper_test.go
+c3a030873330c17380e974970a07bf42  usr/share/gocode/src/github.com/mwitkow/go-conntrack/tracehelper_test.go

@@ -1,0 +1,25 @@
+Package: libprotobuf-lite10
+Source: protobuf
+Version: 3.0.0-9.1~bpo8+1
+Architecture: amd64
+Maintainer: Debian protobuf maintainers <pkg-protobuf-devel@lists.alioth.debian.org>
+Installed-Size: 418
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.9), zlib1g (>= 1:1.1.4)
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/google/protobuf/
+Description: protocol buffers C++ library (lite version)
+ Protocol buffers are a flexible, efficient, automated mechanism for
+ serializing structured data - similar to XML, but smaller, faster, and
+ simpler. You define how you want your data to be structured once, then you can
+ use special generated source code to easily write and read your structured
+ data to and from a variety of data streams and using a variety of languages.
+ You can even update your data structure without breaking deployed programs
+ that are compiled against the "old" format.
+ .
+ Google uses Protocol Buffers for almost all of its internal RPC protocols and
+ file formats.
+ .
+ This package contains the runtime library needed for C++ applications whose
+ message definitions have the "lite runtime" optimization setting.

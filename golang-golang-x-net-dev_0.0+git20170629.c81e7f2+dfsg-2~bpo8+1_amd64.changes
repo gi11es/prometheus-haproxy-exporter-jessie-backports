@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:46:47 +0000
+Source: golang-golang-x-net-dev
+Binary: golang-golang-x-net-dev golang-go.net-dev
+Architecture: source all
+Version: 1:0.0+git20170629.c81e7f2+dfsg-2~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go packaging team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-go.net-dev - Transitional package for golang-golang-x-net-dev
+ golang-golang-x-net-dev - Supplementary Go networking libraries
+Changes:
+ golang-golang-x-net-dev (1:0.0+git20170629.c81e7f2+dfsg-2~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ d0eb182c071c2c3f26ac6750b4e1863d92b5e914 1660 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1.dsc
+ a1562bcb000f326a884dcb8f05defc78c5f3c260 876703 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg.orig.tar.gz
+ 12f882162e4ce8aa69d4be5ae67f261927ea54d4 13388 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1.debian.tar.xz
+ 8c8b20a0ea10a9d417f683ee49bd21b3f1954c5f 609228 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1_all.deb
+ 72f82664bf17a337925f8891872ffc31e0ede549 11526 golang-go.net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1_all.deb
+Checksums-Sha256:
+ c7a15b5981f12addcf98b32fa88f75f7b80ae28acba4a731eda2003838eb929e 1660 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1.dsc
+ 78338918648378053fd2f65983f803350d93b1e81cfbb70fbf47ffc2327fd297 876703 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg.orig.tar.gz
+ b21fd768850f664cdbc4713e9710611aa5cd7e47984dde3e0422aebd2ac1467b 13388 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1.debian.tar.xz
+ cc61c53b1aa07249baf7f24bc5044da07367675271313837b9af546e65a4b8a0 609228 golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1_all.deb
+ 2e8b628a0c3aab875ccb3720722b3def897cb714fbb357fd9255424a07ee128b 11526 golang-go.net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1_all.deb
+Files:
+ 6e8dfb96d1de8f56347967124f2feb6e 1660 devel optional golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1.dsc
+ 63653d966cdecce1e5a7c1de70f822f2 876703 devel optional golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg.orig.tar.gz
+ 5604a8a0c00b944af66f898c75448fd4 13388 devel optional golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1.debian.tar.xz
+ f874bd67949a0fc8e50568388c8bf2ac 609228 devel optional golang-golang-x-net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1_all.deb
+ 353b131b422c24ee55afa0442eb85ff1 11526 oldlibs optional golang-go.net-dev_0.0+git20170629.c81e7f2+dfsg-2~bpo8+1_all.deb

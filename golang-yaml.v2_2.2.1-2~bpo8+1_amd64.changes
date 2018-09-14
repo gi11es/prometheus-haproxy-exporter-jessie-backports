@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 14 Sep 2018 07:20:53 +0000
+Source: golang-yaml.v2
+Binary: golang-gopkg-yaml.v2-dev golang-yaml.v2-dev
+Architecture: source all
+Version: 2.2.1-2~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-gopkg-yaml.v2-dev - YAML support for the Go language
+ golang-yaml.v2-dev - Transitional package for golang-gopkg-yaml.v2-dev
+Changes:
+ golang-yaml.v2 (2.2.1-2~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 0b41310381f40493f2e25a0aea11812c1242f3bf 1426 golang-yaml.v2_2.2.1-2~bpo8+1.dsc
+ 6e303da5c4453499622d91ad90297dad74ce1c86 4364 golang-yaml.v2_2.2.1-2~bpo8+1.debian.tar.xz
+ 3be976c27cc3a2fd378a2b1503f2d8173498774e 58460 golang-gopkg-yaml.v2-dev_2.2.1-2~bpo8+1_all.deb
+ 445402f011a3b66debc815b47ad4165f5dde0dc6 3964 golang-yaml.v2-dev_2.2.1-2~bpo8+1_all.deb
+Checksums-Sha256:
+ f2cc816d875f3adcd8daa8365930cf8238a1791c9ce9d2cb673069fa82a9ee7d 1426 golang-yaml.v2_2.2.1-2~bpo8+1.dsc
+ 44f7f2edd836e7cf23b6bd8c6432f93b597b6c20168079a2c82632ae9f78f828 4364 golang-yaml.v2_2.2.1-2~bpo8+1.debian.tar.xz
+ ce3d19132b0f74f7011c97589975cf97af812816f839ac6a5ffd384e40c95cb5 58460 golang-gopkg-yaml.v2-dev_2.2.1-2~bpo8+1_all.deb
+ 631b57ffc2d6176a6445b1b83e4287576683d34626c78ba2738715fa3802b341 3964 golang-yaml.v2-dev_2.2.1-2~bpo8+1_all.deb
+Files:
+ 4b41c1497af0c3c360e966baa13ea89a 1426 devel optional golang-yaml.v2_2.2.1-2~bpo8+1.dsc
+ ea1f004fe4ae77a0f3573139c1105e14 4364 devel optional golang-yaml.v2_2.2.1-2~bpo8+1.debian.tar.xz
+ fd9baeba351af4cc2120c2764047a2e1 58460 devel optional golang-gopkg-yaml.v2-dev_2.2.1-2~bpo8+1_all.deb
+ c3a76923d2c37a26d77cf77ec62c368d 3964 oldlibs optional golang-yaml.v2-dev_2.2.1-2~bpo8+1_all.deb

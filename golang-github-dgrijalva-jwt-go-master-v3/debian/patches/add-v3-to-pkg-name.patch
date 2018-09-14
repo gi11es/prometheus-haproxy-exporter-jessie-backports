@@ -1,0 +1,175 @@
+Index: golang-github-dgrijalva-jwt-go/cmd/jwt/app.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/cmd/jwt/app.go
++++ golang-github-dgrijalva-jwt-go/cmd/jwt/app.go
+@@ -16,7 +16,7 @@ import (
+ 	"regexp"
+ 	"strings"
+ 
+-	jwt "github.com/dgrijalva/jwt-go"
++	jwt "github.com/dgrijalva/jwt-go-v3"
+ )
+ 
+ var (
+Index: golang-github-dgrijalva-jwt-go/ecdsa_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/ecdsa_test.go
++++ golang-github-dgrijalva-jwt-go/ecdsa_test.go
+@@ -6,7 +6,7 @@ import (
+ 	"strings"
+ 	"testing"
+ 
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ )
+ 
+ var ecdsaTestData = []struct {
+Index: golang-github-dgrijalva-jwt-go/example_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/example_test.go
++++ golang-github-dgrijalva-jwt-go/example_test.go
+@@ -2,7 +2,7 @@ package jwt_test
+ 
+ import (
+ 	"fmt"
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"time"
+ )
+ 
+Index: golang-github-dgrijalva-jwt-go/hmac_example_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/hmac_example_test.go
++++ golang-github-dgrijalva-jwt-go/hmac_example_test.go
+@@ -2,7 +2,7 @@ package jwt_test
+ 
+ import (
+ 	"fmt"
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"io/ioutil"
+ 	"time"
+ )
+Index: golang-github-dgrijalva-jwt-go/hmac_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/hmac_test.go
++++ golang-github-dgrijalva-jwt-go/hmac_test.go
+@@ -1,7 +1,7 @@
+ package jwt_test
+ 
+ import (
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"io/ioutil"
+ 	"strings"
+ 	"testing"
+Index: golang-github-dgrijalva-jwt-go/http_example_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/http_example_test.go
++++ golang-github-dgrijalva-jwt-go/http_example_test.go
+@@ -7,8 +7,8 @@ import (
+ 	"bytes"
+ 	"crypto/rsa"
+ 	"fmt"
+-	"github.com/dgrijalva/jwt-go"
+-	"github.com/dgrijalva/jwt-go/request"
++	"github.com/dgrijalva/jwt-go-v3"
++	"github.com/dgrijalva/jwt-go-v3/request"
+ 	"io"
+ 	"io/ioutil"
+ 	"log"
+Index: golang-github-dgrijalva-jwt-go/none_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/none_test.go
++++ golang-github-dgrijalva-jwt-go/none_test.go
+@@ -1,7 +1,7 @@
+ package jwt_test
+ 
+ import (
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"strings"
+ 	"testing"
+ )
+Index: golang-github-dgrijalva-jwt-go/parser_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/parser_test.go
++++ golang-github-dgrijalva-jwt-go/parser_test.go
+@@ -8,8 +8,8 @@ import (
+ 	"testing"
+ 	"time"
+ 
+-	"github.com/dgrijalva/jwt-go"
+-	"github.com/dgrijalva/jwt-go/test"
++	"github.com/dgrijalva/jwt-go-v3"
++	"github.com/dgrijalva/jwt-go-v3/test"
+ )
+ 
+ var keyFuncError error = fmt.Errorf("error loading key")
+Index: golang-github-dgrijalva-jwt-go/rsa_pss_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/rsa_pss_test.go
++++ golang-github-dgrijalva-jwt-go/rsa_pss_test.go
+@@ -8,7 +8,7 @@ import (
+ 	"strings"
+ 	"testing"
+ 
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ )
+ 
+ var rsaPSSTestData = []struct {
+Index: golang-github-dgrijalva-jwt-go/rsa_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/rsa_test.go
++++ golang-github-dgrijalva-jwt-go/rsa_test.go
+@@ -1,7 +1,7 @@
+ package jwt_test
+ 
+ import (
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"io/ioutil"
+ 	"strings"
+ 	"testing"
+Index: golang-github-dgrijalva-jwt-go/request/request.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/request/request.go
++++ golang-github-dgrijalva-jwt-go/request/request.go
+@@ -1,7 +1,7 @@
+ package request
+ 
+ import (
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"net/http"
+ )
+ 
+Index: golang-github-dgrijalva-jwt-go/request/request_test.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/request/request_test.go
++++ golang-github-dgrijalva-jwt-go/request/request_test.go
+@@ -2,8 +2,8 @@ package request
+ 
+ import (
+ 	"fmt"
+-	"github.com/dgrijalva/jwt-go"
+-	"github.com/dgrijalva/jwt-go/test"
++	"github.com/dgrijalva/jwt-go-v3"
++	"github.com/dgrijalva/jwt-go-v3/test"
+ 	"net/http"
+ 	"net/url"
+ 	"reflect"
+Index: golang-github-dgrijalva-jwt-go/test/helpers.go
+===================================================================
+--- golang-github-dgrijalva-jwt-go.orig/test/helpers.go
++++ golang-github-dgrijalva-jwt-go/test/helpers.go
+@@ -2,7 +2,7 @@ package test
+ 
+ import (
+ 	"crypto/rsa"
+-	"github.com/dgrijalva/jwt-go"
++	"github.com/dgrijalva/jwt-go-v3"
+ 	"io/ioutil"
+ )
+ 

@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+# Exclude building the unused h2i binary to avoid circular dependency
+# with golang-golang-x-crypto-dev.
+export DH_GOLANG_EXCLUDES := golang.org/x/net/http2/h2i
+# Include test fixtures.
+export DH_GOLANG_INSTALL_EXTRA := html/charset/testdata html/testdata \
+    bpf/testdata
+
+%:
+	dh $@ --buildsystem=golang --with=golang --builddirectory=build
+
+override_dh_auto_configure:
+	dh_auto_configure -O--buildsystem=golang
+	# Remove tests that depends on non-free RFC spec.
+	rm -v build/src/golang.org/x/net/http2/*_test.go
+
+override_dh_auto_test:
+	# Some tests require root, need -short to skip them for now.
+	dh_auto_test -O--buildsystem=golang -- -short

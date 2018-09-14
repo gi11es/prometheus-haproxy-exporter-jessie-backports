@@ -1,0 +1,3 @@
+golang-golang-x-net-dev source: debian-watch-file-is-missing
+# This is just a mention of the old repository in the description.
+golang-golang-x-net-dev source: obsolete-url-in-packaging debian/control https://code.google.com/p/go.net/

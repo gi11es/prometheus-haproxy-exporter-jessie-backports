@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 17:53:25 +0000
+Source: golang-gopkg-alecthomas-kingpin.v2
+Binary: golang-gopkg-alecthomas-kingpin.v2-dev
+Architecture: source all
+Version: 2.2.6-1~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-gopkg-alecthomas-kingpin.v2-dev - command-line and flag parser for Go
+Changes:
+ golang-gopkg-alecthomas-kingpin.v2 (2.2.6-1~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 9add6b4effc519f9debb43bd164c39c39016a046 1578 golang-gopkg-alecthomas-kingpin.v2_2.2.6-1~bpo8+1.dsc
+ 4238ff44684b7e55cd1d7d9ddb39ca4abde82a2d 4840 golang-gopkg-alecthomas-kingpin.v2_2.2.6-1~bpo8+1.debian.tar.xz
+ ad09a86a9898743b92e54f0132f6474fc07bbc27 42412 golang-gopkg-alecthomas-kingpin.v2-dev_2.2.6-1~bpo8+1_all.deb
+Checksums-Sha256:
+ 6e4319bb085cbc8cd059ca41058d020b295a26736479477a953bd6c39e592f91 1578 golang-gopkg-alecthomas-kingpin.v2_2.2.6-1~bpo8+1.dsc
+ 93460e7f9f2d0519537c38b4a69dd4b94791b33a45ca404c3e9320c992531a75 4840 golang-gopkg-alecthomas-kingpin.v2_2.2.6-1~bpo8+1.debian.tar.xz
+ 809f7aaa872571c0dbcfc1cf0fb0a202fab4e830ee10965bd17d0f31c56bdbce 42412 golang-gopkg-alecthomas-kingpin.v2-dev_2.2.6-1~bpo8+1_all.deb
+Files:
+ 90896b6e3ce6e9f8df976571ad222464 1578 devel optional golang-gopkg-alecthomas-kingpin.v2_2.2.6-1~bpo8+1.dsc
+ a1f682e06288b44edb7cdd710d457f94 4840 devel optional golang-gopkg-alecthomas-kingpin.v2_2.2.6-1~bpo8+1.debian.tar.xz
+ 8fca51d452e1dde3ff8a4c92b8f526db 42412 devel optional golang-gopkg-alecthomas-kingpin.v2-dev_2.2.6-1~bpo8+1_all.deb

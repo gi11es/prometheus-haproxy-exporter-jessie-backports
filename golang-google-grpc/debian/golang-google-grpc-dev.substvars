@@ -1,0 +1,3 @@
+misc:Built-Using=golang-1.7 (= 1.7.4-1~bpo8+2), golang-github-golang-mock (= 0.0~git20150821.0.06883d9-1~bpo8+1), golang-glog (= 0+git20150801.fca8c88-1~bpo8+1), golang-golang-x-net-dev (= 1:0.0+git20170629.c81e7f2+dfsg-2~bpo8+1), golang-golang-x-oauth2 (= 0.0~git20161103.0.36bc617-4~bpo8+2), golang-goprotobuf (= 0.0~git20161116.0.224aaba-3~bpo8+1), golang-x-text (= 0.0~git20161013.0.c745997-2~bpo8+1), 
+misc:Depends=
+misc:Pre-Depends=

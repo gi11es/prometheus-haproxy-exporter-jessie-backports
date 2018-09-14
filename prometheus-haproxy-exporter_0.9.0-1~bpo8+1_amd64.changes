@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 16:55:15 +0000
+Source: prometheus-haproxy-exporter
+Binary: prometheus-haproxy-exporter
+Architecture: source amd64
+Version: 0.9.0-1~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ prometheus-haproxy-exporter - HAProxy Exporter for Prometheus
+Changes:
+ prometheus-haproxy-exporter (0.9.0-1~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 90096d5705cd9a84c8999133dff8184ef3654493 1569 prometheus-haproxy-exporter_0.9.0-1~bpo8+1.dsc
+ 59a35ce832de87f72a5c74cf574b5abee9e1692c 1844 prometheus-haproxy-exporter_0.9.0-1~bpo8+1.debian.tar.xz
+ a55c10bcf9b94aad1bcf07e000c3499348f62762 1782014 prometheus-haproxy-exporter_0.9.0-1~bpo8+1_amd64.deb
+Checksums-Sha256:
+ a7a903beaa3bb35440a666ab1057cbf5fa75ce0ca0e98030ea9d3d4a7e529fdb 1569 prometheus-haproxy-exporter_0.9.0-1~bpo8+1.dsc
+ 78e81179014d32ee3707f8dbca91edc9b5e4642791e675545e9d04093cfaaf79 1844 prometheus-haproxy-exporter_0.9.0-1~bpo8+1.debian.tar.xz
+ 100d99fc9abe3172d696132ad263e73cb9651fc676e0286eab70a0f40615f9a8 1782014 prometheus-haproxy-exporter_0.9.0-1~bpo8+1_amd64.deb
+Files:
+ 98ef36be49541d93520b69088f46fc89 1569 devel optional prometheus-haproxy-exporter_0.9.0-1~bpo8+1.dsc
+ 2195cabbc8fa90eb5407ce0e976ba612 1844 devel optional prometheus-haproxy-exporter_0.9.0-1~bpo8+1.debian.tar.xz
+ b776da286244f4d1f04b9df6958be34c 1782014 devel optional prometheus-haproxy-exporter_0.9.0-1~bpo8+1_amd64.deb

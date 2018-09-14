@@ -1,0 +1,31 @@
+Description: Disable test that adds an extra dependency.
+
+--- a/decode-bench_test.go
++++ b/decode-bench_test.go
+@@ -1,11 +1,11 @@
+ package logfmt
+ 
+ import (
+-	"bufio"
++//	"bufio"
+ 	"bytes"
+ 	"testing"
+ 
+-	kr "github.com/kr/logfmt"
++//	kr "github.com/kr/logfmt"
+ )
+ 
+ func BenchmarkDecodeKeyval(b *testing.B) {
+@@ -36,6 +36,7 @@
+ 	}
+ }
+ 
++/*
+ func BenchmarkKRDecode(b *testing.B) {
+ 	const rows = 10000
+ 	data := []byte{}
+@@ -73,3 +74,4 @@
+ func (discardHandler) HandleLogfmt(key, val []byte) error {
+ 	return nil
+ }
++*/

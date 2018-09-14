@@ -1,0 +1,152 @@
+golang-github-prometheus-common (0+git20180518.7600349-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/compat
+    - Reduced minimum version to 10.
+  * debian/control
+    - Reduced minimum version of debhelper to 10.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 18:07:40 +0000
+
+golang-github-prometheus-common (0+git20180518.7600349-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Bump Standards-Version (no changes).
+  * Add new dependency.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 10 Jun 2018 18:21:28 +0000
+
+golang-github-prometheus-common (0+git20180413.d0f7cd6-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Martín Ferrari ]
+  * New upstream snapshot.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 19 May 2018 12:53:30 +0000
+
+golang-github-prometheus-common (0+git20180110.89604d1-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Update S-V and compat level.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 21 Jan 2018 20:00:22 +0000
+
+golang-github-prometheus-common (0+git20171117.2e54d0b-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add missing version in logrus dependency.
+  * Automatic fixes to control and copyright from cme.
+  * debian/control: Update Standards-Version (no changes).
+  * debian/control: Update Description.
+  * debian/control: Update Priority.
+  * debian/control: Update dependencies.
+  * debian/control: Add new go-kit dependency.
+  * Stop using pristine-tar.
+  * Patch log_test.go to avoid test failure.
+  * Update lintian overrides.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 14 Dec 2017 15:13:07 +0000
+
+golang-github-prometheus-common (0+git20170707.3e6a763-1) unstable; urgency=medium
+
+  * Replace debian/rules trick for creating tarballs with gbp config.
+  * New upstream snapshot.
+  * debian/control: Update Standards-Version (no changes).
+  * Update Logrus dependency due to name change.
+
+ -- Martín Ferrari <tincho@debian.org>  Fri, 14 Jul 2017 17:57:07 +0000
+
+golang-github-prometheus-common (0+git20170220.49fee29-3) unstable; urgency=medium
+
+  * Uploading to unstable version already in experimental.
+  * debian/control: Fix Vcs-* fields.
+  * Use pkg-go autopkgtest script.
+
+ -- Martín Ferrari <tincho@debian.org>  Wed, 21 Jun 2017 11:20:18 +0000
+
+golang-github-prometheus-common (0+git20170220.49fee29-2) experimental; urgency=medium
+
+  * Add autopkgtest.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 21 May 2017 00:16:36 +0200
+
+golang-github-prometheus-common (0+git20170220.49fee29-1) experimental; urgency=medium
+
+  * New upstream snapshot, required for Prometheus 1.6.2.
+
+ -- Martín Ferrari <tincho@debian.org>  Fri, 19 May 2017 20:05:39 +0000
+
+golang-github-prometheus-common (0+git20161002.85637ea-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on golang-github-sirupsen-logrus-dev instead of transitional
+    package.
+
+ -- Tim Potter <tpot@hpe.com>  Fri, 28 Oct 2016 12:35:48 +1100
+
+golang-github-prometheus-common (0+git20161002.85637ea-1) unstable; urgency=medium
+
+  * New upstream snapshot, required for Prometheus 1.1.2.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 23 Oct 2016 20:13:46 +0000
+
+golang-github-prometheus-common (0+git20160928.e35a2e3+really.ebdfc6d-1) unstable; urgency=medium
+
+  * Rollback to 0+git20160801.0.ebdfc6d, as the last upload broke
+    reverse-dependencies. Closes: #839312.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 02 Oct 2016 16:42:44 +0000
+
+golang-github-prometheus-common (0+git20160928.e35a2e3-1) unstable; urgency=medium
+
+  * New upstream snapshot. Going back to the original version formatting.
+  * Remove private copy of metrics.proto, as it is packaged separately.
+  * Avoid building the version package, to remove the source circular
+    dependency. Binary packages still need the circular dependency (but now it
+    is not including the transitional package any more). Closes: #836964.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 29 Sep 2016 15:08:15 +0000
+
+golang-github-prometheus-common (0+git20160801.0.ebdfc6d-1) unstable; urgency=medium
+
+  [ Martín Ferrari ]
+  * New upstream snapshot, for prometheus 1.0.1.
+  * debian/control: Depend on golang-any and current dh-golang.
+  * debian/rules: Simplify rules using current dh-golang features.
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+ -- Martín Ferrari <tincho@debian.org>  Mon, 15 Aug 2016 13:04:47 +0100
+
+golang-github-prometheus-common (0+git20160526.0.a6ab084-1) unstable; urgency=medium
+
+  * New upstream snapshot, for prometheus 0.19.2.
+  * debian/control: depend on recent golang-golang-x-net-dev that solves
+    an important bug.
+
+ -- Martín Ferrari <tincho@debian.org>  Mon, 30 May 2016 11:41:10 +0200
+
+golang-github-prometheus-common (0+git20160504.0.dd586c1-1) unstable; urgency=medium
+
+  * New upstream snapshot, for prometheus-node-exporter 0.12.0.
+  * debian/control: Use XS-Go-Import-Path (which require dh-golang 1.10),
+    update Standards-Version with no changes.
+  * debian/rules: Fix gen-orig-tgz target.
+  * Switch to use the golang-github-prometheus-client-model-dev package.
+
+ -- Martín Ferrari <tincho@debian.org>  Fri, 06 May 2016 18:35:11 +0000
+
+golang-github-prometheus-common (0+git20160321.4045694-1) unstable; urgency=medium
+
+  * New upstream "release", for prometheus 0.17.0.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 26 Mar 2016 04:13:58 +0000
+
+golang-github-prometheus-common (0+git20160104.0a3005b-1) unstable; urgency=medium
+
+  * Initial package. (Closes: #810667)
+
+ -- Martín Ferrari <tincho@debian.org>  Mon, 11 Jan 2016 06:05:36 -0300

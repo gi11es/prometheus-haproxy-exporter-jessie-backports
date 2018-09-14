@@ -1,0 +1,17 @@
+prometheus-haproxy-exporter (0.9.0-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/compat
+    - Reduce minimum version to 10.
+  * debian/control
+    - Reduce minimum version of debhelper to 10.
+    - Set minimum version of dh-golang to 1.7.
+    - Set miniumum version of golang-github-prometheus-common-dev to 0+git20180518.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 16:55:15 +0000
+
+prometheus-haproxy-exporter (0.9.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #906097)
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 06 Sep 2018 21:34:07 +0800

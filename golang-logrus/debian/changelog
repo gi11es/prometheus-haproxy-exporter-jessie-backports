@@ -1,0 +1,156 @@
+golang-logrus (1.0.6-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/compat
+    - Reduced minimum version to 10.
+  * debian/control
+    - Reduced minimum version of debhelper to 10.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Fri, 14 Sep 2018 07:18:56 +0000
+
+golang-logrus (1.0.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Debhelper & compat to version 11.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 10 Sep 2018 07:42:42 +1000
+
+golang-logrus (1.0.5-2) unstable; urgency=medium
+
+  * Team upload.
+  * Cherry-pick "Fix a race condition in TestLoggingWithHooksRace" from
+    upstream because autopkgtest was failing randomly for 1.0.5-1.
+    See https://ci.debian.net/data/autopkgtest/testing/amd64/g/golang-logrus/286167/log.gz
+    and https://github.com/sirupsen/logrus/issues/740
+
+ -- Anthony Fok <foka@debian.org>  Fri, 18 May 2018 09:33:36 -0600
+
+golang-logrus (1.0.5-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * New upstream release.
+  * (Build-)Depends:
+    + golang-golang-x-crypto-dev
+    + golang-golang-x-sys-dev
+  * Priority: optional.
+  * Standards-Version: 4.1.4.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 06 May 2018 01:55:29 +1000
+
+golang-logrus (1.0.2-2) unstable; urgency=high
+
+  * Add maintscript to handle symlink to dir conversions.
+    Closes: 870843.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 17 Aug 2017 05:52:43 +0000
+
+golang-logrus (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upstream changed its name: update everywhere and revert compat linking.
+  * debian/control: Update Standards-Version (no changes).
+  * debian/control: Mark package as autopkgtest-able.
+  * Re-enable disabled tests.
+
+ -- Martín Ferrari <tincho@debian.org>  Fri, 14 Jul 2017 18:20:59 +0000
+
+golang-logrus (0.11.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add a symlink for github.com/sirupsen/logrus package.
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 04 Jul 2017 11:12:17 +0200
+
+golang-logrus (0.11.0-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Martín Ferrari ]
+  * Add myself to Uploaders.
+  * debian/control: Replace golang-go with golang-any in Build-Depends.
+  * New upstream release.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 17 Nov 2016 16:50:11 +0100
+
+golang-logrus (0.10.0-3) UNRELEASED; urgency=medium
+
+  * Require dh-golang 1.10, for XS-Go-Import-Path.
+
+ -- Martín Ferrari <tincho@debian.org>  Wed, 04 May 2016 13:28:46 +0100
+
+golang-logrus (0.10.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Make pkg-go the maintainer. Closes: #823345.
+
+ -- Martín Ferrari <tincho@debian.org>  Tue, 03 May 2016 21:30:40 +0000
+
+golang-logrus (0.10.0-1) unstable; urgency=medium
+
+  * Team upload.
+    Closes: #822926
+
+  [ Tim Potter ]
+  * New upstream version
+  * Add d/docs and d/examples instead of building with DH_GOLANG_INSTALL_ALL
+  * Update standards version to 3.9.8
+  * Various dependencies removed as hooks moved out of repository
+
+ -- Martín Ferrari <tincho@debian.org>  Tue, 03 May 2016 17:52:34 +0000
+
+golang-logrus (0.8.7-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop "no-bugsnag.patch";
+  * Build-Depends += "golang-github-bugsnag-bugsnag-go-dev".
+  * Synchronized Build-Depends and Depends (added missing packages).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Wed, 09 Mar 2016 11:23:15 +1100
+
+golang-logrus (0.8.7-2) unstable; urgency=medium
+
+  * Fix Replaces/Breaks version number to be correct (Closes: #801559).
+
+ -- Tianon Gravi <tianon@debian.org>  Sat, 24 Oct 2015 06:21:25 -0700
+
+golang-logrus (0.8.7-1) unstable; urgency=medium
+
+  * Update to 0.8.7 upstream release.
+
+ -- Tianon Gravi <tianon@debian.org>  Fri, 23 Oct 2015 13:21:38 -0700
+
+golang-logrus (0.7.3-2) unstable; urgency=medium
+
+  * Rename binary package to "golang-github-sirupsen-logrus-dev" to be in line
+    with pkg-go team policy.
+  * Modify some other minor bits of packaging to be more in line with pkg-go
+    policy/norm.
+
+ -- Tianon Gravi <tianon@debian.org>  Mon, 05 Oct 2015 01:26:00 -0700
+
+golang-logrus (0.7.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upgrade to 0.7.3.
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Wed, 20 May 2015 09:13:56 -0600
+
+golang-logrus (0.7.1-1) unstable; urgency=medium
+
+  * Upgrade to 0.7.1.
+
+ -- Jessie Frazelle <jess@docker.com>  Tue, 24 Mar 2015 17:54:48 -0600
+
+golang-logrus (0.6.0-1) experimental; urgency=medium
+
+  * Initial release.
+
+ -- Jessie Frazelle <jess@docker.com>  Tue, 10 Mar 2015 22:21:30 +0000

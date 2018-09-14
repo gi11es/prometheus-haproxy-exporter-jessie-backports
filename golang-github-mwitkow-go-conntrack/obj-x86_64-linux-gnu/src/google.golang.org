@@ -1,0 +1,1 @@
+/usr/share/gocode/src/google.golang.org

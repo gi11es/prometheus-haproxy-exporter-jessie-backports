@@ -1,0 +1,188 @@
+golang-golang-x-net-dev (1:0.0+git20170629.c81e7f2+dfsg-2~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 18:46:47 +0000
+
+golang-golang-x-net-dev (1:0.0+git20180124.0ed95ab+dfsg-2) unstable; urgency=medium
+
+  * Team upload.
+  * docs: fixed file name of README file (Closes: #903331).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 09 Jul 2018 15:02:13 +1000
+
+golang-golang-x-net-dev (1:0.0+git20180124.0ed95ab+dfsg-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 0.0+git20180124.0ed95ab+dfsg
+    corresponding to release-branch.go1.10 upstream
+  * debian/gbp.conf: Disable pristine-tar
+  * Refresh debian/golang-golang-x-net-dev.lintian-overrides
+
+ -- Anthony Fok <foka@debian.org>  Tue, 03 Apr 2018 00:41:08 -0600
+
+golang-golang-x-net-dev (1:0.0+git20170629.c81e7f2+dfsg-2) unstable; urgency=high
+
+  [ Paul Tagliamonte ]
+  * Remove Built-Using from arch:all -dev package
+
+  [ Martín Ferrari ]
+  * Automated cme updates.
+  * Update Standards-Version.
+  * New lintian warnings that need to be overridden.
+  * debian/rules: Remove now unneeded targets.
+  * Fix builds in s390x. Closes: #886761 (raising urgency).
+
+ -- Martín Ferrari <tincho@debian.org>  Tue, 09 Jan 2018 16:30:51 +0000
+
+golang-golang-x-net-dev (1:0.0+git20170629.c81e7f2+dfsg-1) unstable; urgency=medium
+
+  [ Martín Ferrari ]
+  * Switch to golang-any.
+  * Add versioned dependency on golang 1.5, due to API differences in net/http.
+
+  [ Anthony Fok ]
+  * New upstream snapshot.  It contains a fix (dated 2016-10-30) to
+    recently-broken tests in webdav_test.go.  See
+    https://go.googlesource.com/net/+/d6520b84c835d97913ea0e7cf5f43cca5693ef16
+    for details. (Closes: #866092)
+  * Bump Standards-Version to 4.0.0.
+    Use https form of the copyright-format URL in debian/copyright.
+  * Add myself to the list of Uploaders.
+  * Update Lintian overrides:
+     - Update name of source package (was golang-go.net-dev, now
+       golang-golang-x-net-dev) so that the override for
+       debian-watch-file-is-missing works again.
+     - Add override for mention of old
+       code.google.com repository.
+     - Remove unused-override
+       copyright-should-refer-to-common-license-file-for-gpl.
+
+ -- Anthony Fok <foka@debian.org>  Thu, 29 Jun 2017 06:56:30 -0600
+
+golang-golang-x-net-dev (1:0.0+git20161013.8b4af36+dfsg-3) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Tim Potter ]
+  * Add me as uploader
+
+  [ Anthony Fok ]
+  * New upstream snapshot
+  * Add debian/gbp.conf to use DEP-14 branches
+  * Add Files-Excluded field to debian/copyright so that we know which file
+    is excluded so as to keep this package DFSG-clean.
+  * Add gen-orig-tar-xz target in debian/rules
+
+ -- Anthony Fok <foka@debian.org>  Sat, 15 Oct 2016 04:31:25 -0600
+
+golang-golang-x-net-dev (1:0.0+git20160518.b3e9c8f+dfsg-2) unstable; urgency=medium
+
+  * Team upload.
+  * Avoid circular dependency with golang-golang-x-crypto-dev
+    by exporting DH_GOLANG_EXCLUDES := golang.org/x/net/http2/h2i
+    and removing golang-golang-x-crypto-dev from Build-Depends and Depends.
+    (Latest version of golang-golang-x-crypto-dev depends on
+    golang-golang-x-net-dev due to the use of golang.org/x/net/context in
+    golang.org/x/crypto/acme/internal/acme.)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 08 Jun 2016 04:48:27 -0600
+
+golang-golang-x-net-dev (1:0.0+git20160518.b3e9c8f+dfsg-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Require golang-go 1.5, and dh-golang 1.17.
+  * debian/rules:
+    - Fix gen-orig-tgz target.
+    - Use new dh-golang features to simplify the script.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 26 May 2016 09:50:30 +0000
+
+golang-golang-x-net-dev (1:0.0+git20160428.35ec611+dfsg-1) unstable; urgency=medium
+
+  [ Tim Potter ]
+  * New upstream snapshot.
+  * Standards-Version: 3.9.8
+
+  [ Martín Ferrari ]
+  * Reconcile trees, after a few mistakes were made. Make the package DFSG-free
+    again.
+  * Remove patch, as these tests can't be run (non-DFSG files).
+  * Set XS-Go-Import-Path.
+  * Fix bpf tests.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 01 May 2016 07:01:11 +0000
+
+golang-golang-x-net-dev (1:0.0+git20160110.4fd4a9f-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream snapshot. (Closes: #810775).
+  * Add additional B-Ds to upgrade golang-x-text-dev and add
+    golang-golang-x-crypto-dev.
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 12 Jan 2016 11:59:48 +1100
+
+golang-golang-x-net-dev (1:0.0+git20150817.66f0418-1) unstable; urgency=medium
+
+  * Bump epoch to bring back the proper binary package (Re: #807002)
+
+ -- Tianon Gravi <tianon@debian.org>  Sat, 05 Dec 2015 09:42:14 -0800
+
+golang-golang-x-net-dev (0.0+git20151007.b846920+dfsg-1) unstable; urgency=medium
+
+  * New upstream snapshot, as upstream made many changes in the last few days.
+  * Repackaged to remove non-free RFC document (used as test data).
+  * Added golang-go.crypto-dev as new dependency.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 10 Oct 2015 14:29:50 +0000
+
+golang-golang-x-net-dev (0.0+git20150817.66f0418-1) unstable; urgency=medium
+
+  * New upstream snapshot. Closes: #798649.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 10 Oct 2015 12:26:10 +0000
+
+golang-golang-x-net-dev (0.0+git20150226.3d87fd6-3) unstable; urgency=high
+
+  * Document copyright info for html/testdata/go1.html (Closes: #790313)
+
+ -- Martín Ferrari <tincho@debian.org>  Mon, 06 Jul 2015 07:26:21 +0200
+
+golang-golang-x-net-dev (0.0+git20150226.3d87fd6-2) unstable; urgency=medium
+
+  * Rename source and binary package from golang-go.net-dev to
+    golang-golang-x-net-dev, following the policy outlined at
+    http://pkg-go.alioth.debian.org/packaging.html
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Mon, 22 Jun 2015 21:54:09 +0200
+
+golang-go.net-dev (0.0+git20150226.3d87fd6-1) unstable; urgency=medium
+
+  * Update to last working version in upstream's repository
+    (https://github.com/golang/go/issues/10904 breaks x/net/webdav with golang
+    1.4.2).
+  * Revamp package: version numbering, switch to upstream's new git repo, move
+    package to pkg-go, update metadata and debian/rules.
+
+ -- Martín Ferrari <tincho@debian.org>  Tue, 19 May 2015 01:41:35 +0000
+
+golang-go.net-dev (0.0~hg20131201-1) unstable; urgency=low
+
+  [ Michael Stapelberg ]
+  * update Vcs-Git location to point to alioth
+
+  [ Jonathan Dray ]
+  * new version number pattern for the package
+
+ -- Jonathan Dray <jonathan.dray@gmail.com>  Mon, 02 Dec 2013 20:02:16 +0100
+
+golang-go.net-dev (0.0~hg67397a11592e-1) unstable; urgency=low
+
+  * Initial release (Closes: #726146)
+
+ -- Jonathan Dray <jonathan.dray@gmail.com>  Sat, 23 Nov 2013 16:48:04 +0100

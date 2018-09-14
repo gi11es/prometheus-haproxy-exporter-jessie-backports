@@ -1,0 +1,60 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: golang-github-go-kit-kit
+Source: https://github.com/go-kit/kit
+
+Files: *
+Copyright: 2015 Peter Bourgon
+License: Expat
+
+Files: log/term/*
+Copyright: 2015 Peter Bourgon
+License: Expat
+Comment: Apart from the files described in the next section, this whole
+ directory is not properly licensed.
+ .
+ The LICENSE file in the directory is copied verbatim from the log15 project.
+ .
+ The log/term/colorwriter_windows.go file claims to be based on
+ github.com/mattn/go-colorable, but the code seems to be divergent enough, and
+ there is no explicit copyright assignment, so I am assuming it is governed by
+ the top-level LICENSE file.
+ .
+ The rest of the files in that directory were created by members of the go-kit
+ project and did not add any copyright claim, thus I am assuming they are also
+ under the main LICENSE.
+ .
+ To clarify all these matters, a bug has been opened at
+ https://github.com/go-kit/kit/issues/640
+
+Files: log/term/terminal_*
+Copyright: 2014 Simon Eskildsen
+License: Expat
+Comment: Files from http://gopkg.in/inconshreveable/log15.v2/term, imported in
+ 2015 according to git history. In turn, these files have the following header:
+ // Based on ssh/terminal:
+ // Copyright 2013 The Go Authors. All rights reserved.
+ // Use of this source code is governed by a BSD-style
+ // license that can be found in the LICENSE file.
+
+Files: debian/*
+Copyright: 2017 Martín Ferrari <tincho@tincho.org>
+License: Expat
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.

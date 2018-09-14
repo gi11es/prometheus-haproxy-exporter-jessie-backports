@@ -1,0 +1,13 @@
+Package: golang-yaml.v2-dev
+Source: golang-yaml.v2
+Version: 2.2.1-2~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 29
+Depends: golang-gopkg-yaml.v2-dev
+Section: oldlibs
+Priority: optional
+Homepage: https://github.com/go-yaml/yaml/tree/v2
+Description: Transitional package for golang-gopkg-yaml.v2-dev
+ This is a transitional package to ease upgrades to the
+ golang-gopkg-yaml.v2-dev package. It can safely be removed.

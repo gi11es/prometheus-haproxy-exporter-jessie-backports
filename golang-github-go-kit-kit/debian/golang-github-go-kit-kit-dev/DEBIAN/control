@@ -1,0 +1,24 @@
+Package: golang-github-go-kit-kit-dev
+Source: golang-github-go-kit-kit
+Version: 0.6.0-3~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 565
+Depends: golang-github-dgrijalva-jwt-go-v3-dev, golang-github-go-logfmt-logfmt-dev, golang-github-go-stack-stack-dev, golang-github-opentracing-opentracing-go-dev, golang-golang-x-net-dev, golang-golang-x-time-dev, golang-google-grpc-dev
+Section: devel
+Priority: optional
+Homepage: https://github.com/go-kit/kit
+Description: Programming toolkit for microservices
+ Go kit is a set of packages and best practices, which provide a comprehensive,
+ robust, and trustable way of building microservices for organizations of any
+ size.
+ .
+ As the dependency tree is enormous, the Debian package only offers some of the
+ components of Go kit:
+ .
+  * auth
+  * endpoint
+  * log
+  * tracing
+  * transport
+  * util

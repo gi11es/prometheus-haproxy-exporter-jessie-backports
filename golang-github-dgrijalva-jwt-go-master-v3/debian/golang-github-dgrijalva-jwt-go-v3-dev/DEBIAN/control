@@ -1,0 +1,13 @@
+Package: golang-github-dgrijalva-jwt-go-v3-dev
+Source: golang-github-dgrijalva-jwt-go-v3
+Version: 3.1.0-2~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 156
+Section: devel
+Priority: optional
+Homepage: https://github.com/dgrijalva/jwt-go
+Description: Golang implementation of JSON Web Tokens (JWT)
+ JSON Web Tokens are compact, URL-safe means of representing
+ claims to be transferred between two parties. This library
+ is an implementation of JSON Web Tokens in the Go language.

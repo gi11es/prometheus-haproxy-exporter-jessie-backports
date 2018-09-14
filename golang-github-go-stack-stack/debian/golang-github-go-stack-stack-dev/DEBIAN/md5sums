@@ -1,0 +1,6 @@
+482e331b2c24863c4b4d9b90b9cc7481  usr/share/doc/golang-github-go-stack-stack-dev/changelog.Debian.gz
+21b8edc442af52b2209fe67eee9a9654  usr/share/doc/golang-github-go-stack-stack-dev/copyright
+ec69cd864431768439bc283f2f2a06f7  usr/share/gocode/src/github.com/go-stack/stack/format_test.go
+a722d5ea1ecada9863cf01b96aac31db  usr/share/gocode/src/github.com/go-stack/stack/stack.go
+0a9d826653df809d53bf9c028e74b3b5  usr/share/gocode/src/github.com/go-stack/stack/stack_test.go
+68e64aea08e17bb8904ef2fe99aae4ec  usr/share/gocode/src/github.com/go-stack/stack/stackinternal_test.go

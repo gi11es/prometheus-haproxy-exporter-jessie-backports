@@ -1,0 +1,100 @@
+golang-yaml.v2 (2.2.1-2~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/compat
+    - Reduce minimum version to 10.
+  * debian/control
+    - Reduce minmimum version of debhelper to 10.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Fri, 14 Sep 2018 07:20:53 +0000
+
+golang-yaml.v2 (2.2.1-2) UNRELEASED; urgency=medium
+
+  * debian/gbp.conf: Update repo standard.
+  * debian/control: Tidying by wrap-and-sort.
+
+ -- Martín Ferrari <tincho@debian.org>  Wed, 20 Jun 2018 15:23:43 +0000
+
+golang-yaml.v2 (2.2.1-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream release 2.2.1
+  * Apply "cme fix dpkg" fixes:
+    - Bump Standards-Version from 4.0.0 to 4.1.3
+    - Change source Priority from "extra" to "optional"
+    - Add "Testsuite: autopkgtest-pkg-go"
+    - Remove unneeded versioned dependencies
+    - Rename license key from "MIT" to "Expat"
+  * Activate debian/watch: Upstream has started releasing tarballs
+  * Use debhelper (>= 11)
+  * Bump Standards-Version to 4.1.4: Remove gen-orig-tgz
+    (akin to get-orig-source) debian/rules target, etc.
+  * Install new NOTICE file as required by the Apache-2.0 License
+    (Fixes Lintian missing-notice-file-for-apache-license error)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 11 Apr 2018 05:17:28 -0600
+
+golang-yaml.v2 (0.0+git20170407.0.cd8b52f-1) unstable; urgency=medium
+
+  * New upstream version, with decode test fix for Go 1.8, see
+    https://github.com/go-yaml/yaml/pull/217. (Closes: #866091)
+  * Remove unnecessary Built-Using field for non-compiled -dev package
+  * Bump Standards-Version to 4.0.0:
+    Use https form of the copyright-format URL in debian/copyright.
+
+ -- Anthony Fok <foka@debian.org>  Tue, 27 Jun 2017 14:50:04 -0600
+
+golang-yaml.v2 (0.0+git20160928.0.a5b47d3-2) unstable; urgency=medium
+
+  * Update debian/copyright to reflect upstream license change.
+    Upstream switched from LGPL-3.0 to Apache-2.0 in May 2016,
+    see https://github.com/go-yaml/yaml/issues/160 for details.
+
+ -- Anthony Fok <foka@debian.org>  Fri, 14 Oct 2016 18:58:38 -0600
+
+golang-yaml.v2 (0.0+git20160928.0.a5b47d3-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Anthony Fok <foka@debian.org>  Fri, 14 Oct 2016 18:02:52 -0600
+
+golang-yaml.v2 (0.0+git20160301.0.a83829b-2) unstable; urgency=medium
+
+  [ Martín Ferrari ]
+  * debian/rules: Update gen-orig-tgz target.
+  * Require dh-golang 1.10, for XS-Go-Import-Path.
+
+  [ Anthony Fok ]
+  * Refresh debian/control
+    - Replace golang-go with golang-any in Build-Depends
+    - Replace golang-check.v1 with golang-gopkg-check.v1 in dependencies
+    - Bump Standards-Version to 3.9.8 (no change)
+    - Use secure https URLs for Vcs-* fields too
+    - Add XS-Go-Import-Path: gopkg.in/yaml.v2
+    - Add myself to the list of Uploaders
+  * Rename golang-yaml.v2-dev to golang-gopkg-yaml.v2-dev
+    for pkg-go policy compliance.
+
+ -- Anthony Fok <foka@debian.org>  Sat, 11 Jun 2016 12:30:22 -0600
+
+golang-yaml.v2 (0.0+git20160301.0.a83829b-1) unstable; urgency=medium
+
+  * Update to latest upstream commit to pull in fixes for golang-1.6
+  * Upgrade to latest standards version in d/control
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 05 Apr 2016 18:59:30 -0400
+
+golang-yaml.v2 (0.0+git20150627.7ad95dd-1) unstable; urgency=medium
+
+  * Update to latest upstream commit, and upload to Debian.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 27 Jun 2015 07:03:38 +0000
+
+golang-yaml.v2 (0.0~git20150225-1) unstable; urgency=low
+
+  * Initial package. (Closes: #779237)
+
+ -- Sergio Schvezov <sergio.schvezov@canonical.com>  Wed, 25 Feb 2015 09:31:29 -0300

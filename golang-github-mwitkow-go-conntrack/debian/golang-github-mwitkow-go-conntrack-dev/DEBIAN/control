@@ -1,0 +1,24 @@
+Package: golang-github-mwitkow-go-conntrack-dev
+Source: golang-github-mwitkow-go-conntrack
+Version: 0.0~git20161129.cc309e4-3~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 102
+Depends: golang-github-prometheus-client-golang-dev, golang-github-stretchr-testify-dev, golang-golang-x-net-dev
+Section: devel
+Priority: optional
+Homepage: https://github.com/mwitkow/go-conntrack
+Description: Go middleware for net.Conn tracking
+ Prometheus (https://prometheus.io/) monitoring and x/net/trace
+ (https://godoc.org/golang.org/x/net/trace#EventLog) tracing wrappers for
+ net.Conn, both inbound (net.Listener) and outbound (net.Dialer).
+ .
+ Go standard library does a great job of doing "the right" things with
+ your connections: http.Transport pools outbound ones, and http.Server
+ sets good Keep Alive defaults.  However, it is still easy to get it
+ wrong.
+ .
+ That's why you should be able to monitor (using Prometheus) how many
+ connections your Go frontend servers have inbound, and how big are the
+ connection pools to your backends. You should also be able to inspect
+ your connection without ssh and netstat.

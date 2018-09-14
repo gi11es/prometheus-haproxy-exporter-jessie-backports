@@ -1,0 +1,65 @@
+Description: This package does not buildon s390x/gccgo, due to a missing header
+ file in gccgo. Use the generic routines instead.
+--- a/internal/socket/sys_linux.go
++++ b/internal/socket/sys_linux.go
+@@ -2,7 +2,7 @@
+ // Use of this source code is governed by a BSD-style
+ // license that can be found in the LICENSE file.
+ 
+-// +build linux,!s390x,!386
++// +build linux,!386
+ 
+ package socket
+ 
+--- a/internal/socket/sys_linux_s390x.go
++++ b/internal/socket/sys_linux_s390x.go
+@@ -4,12 +4,14 @@
+ 
+ package socket
+ 
++/*
+ import (
+ 	"syscall"
+ 	"unsafe"
+ )
+ 
+ func probeProtocolStack() int { return 8 }
++*/
+ 
+ const (
+ 	sysSETSOCKOPT = 0xe
+@@ -20,6 +22,7 @@
+ 	sysSENDMMSG   = 0x14
+ )
+ 
++/*
+ func socketcall(call, a0, a1, a2, a3, a4, a5 uintptr) (uintptr, syscall.Errno)
+ func rawsocketcall(call, a0, a1, a2, a3, a4, a5 uintptr) (uintptr, syscall.Errno)
+ 
+@@ -53,3 +56,4 @@
+ 	n, errno := socketcall(sysSENDMMSG, s, uintptr(unsafe.Pointer(&hs[0])), uintptr(len(hs)), uintptr(flags), 0, 0)
+ 	return int(n), errnoErr(errno)
+ }
++*/
+--- a/internal/socket/sys_linux_s390x.s
++++ b/internal/socket/sys_linux_s390x.s
+@@ -2,6 +2,8 @@
+ // Use of this source code is governed by a BSD-style
+ // license that can be found in the LICENSE file.
+ 
++// +build ignore
++
+ #include "textflag.h"
+ 
+ TEXT	·socketcall(SB),NOSPLIT,$0-72
+--- a/internal/socket/sys_unix.go
++++ b/internal/socket/sys_unix.go
+@@ -2,7 +2,7 @@
+ // Use of this source code is governed by a BSD-style
+ // license that can be found in the LICENSE file.
+ 
+-// +build darwin dragonfly freebsd linux,!s390x,!386 netbsd openbsd
++// +build darwin dragonfly freebsd linux,!386 netbsd openbsd
+ 
+ package socket
+ 

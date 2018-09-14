@@ -1,0 +1,6 @@
+python:Provides=python2.7-protobuf
+python:Versions=2.7
+python:Depends=python (<< 2.8), python (>= 2.7~), python-pkg-resources, python-six, python:any (<< 2.8), python:any (>= 2.7.5-5~), python:any (>= 2.7~)
+shlibs:Depends=libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libprotobuf10, libstdc++6 (>= 4.3)
+misc:Depends=
+misc:Pre-Depends=

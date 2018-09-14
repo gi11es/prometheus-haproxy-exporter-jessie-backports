@@ -1,0 +1,5 @@
+# uscan(1) configuration file.
+version=3
+
+ https://github.com/grpc/grpc-go/releases \
+ .*/archive/v?(\d[\d\.]+)\.tar\.gz

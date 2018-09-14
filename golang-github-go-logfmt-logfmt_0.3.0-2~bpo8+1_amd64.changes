@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:27:05 +0000
+Source: golang-github-go-logfmt-logfmt
+Binary: golang-github-go-logfmt-logfmt-dev
+Architecture: source all
+Version: 0.3.0-2~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-go-logfmt-logfmt-dev - Marshals and unmarshals logfmt messages
+Changes:
+ golang-github-go-logfmt-logfmt (0.3.0-2~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 61885823be06e3ece5ecf7202d26ba0b58fd30d1 1407 golang-github-go-logfmt-logfmt_0.3.0-2~bpo8+1.dsc
+ 4b6556e00c97f9df6023cac0527bbb37beaa4a1f 4048 golang-github-go-logfmt-logfmt_0.3.0-2~bpo8+1.debian.tar.xz
+ 30230c095de64cae5ad1f5778669f5932727131b 12738 golang-github-go-logfmt-logfmt-dev_0.3.0-2~bpo8+1_all.deb
+Checksums-Sha256:
+ 949a554b65b55c67abd0ea7d9cfe4317ea6c97153d775b2be600f4201cd0b3e0 1407 golang-github-go-logfmt-logfmt_0.3.0-2~bpo8+1.dsc
+ d4209e8cda458e482840f6dc28516efe7b4148f56b0fee94e039202bdfb14c29 4048 golang-github-go-logfmt-logfmt_0.3.0-2~bpo8+1.debian.tar.xz
+ 6854b97ff1c1a81e200aec05cde3163ae87f8b2a784b2df06648d28c07cb1f93 12738 golang-github-go-logfmt-logfmt-dev_0.3.0-2~bpo8+1_all.deb
+Files:
+ 8a200b83a6bd4cbdf67458bb4b068c5d 1407 devel extra golang-github-go-logfmt-logfmt_0.3.0-2~bpo8+1.dsc
+ cf57393d036ca89c60158944fd192b47 4048 devel extra golang-github-go-logfmt-logfmt_0.3.0-2~bpo8+1.debian.tar.xz
+ 6bbfcfe58742d1494d4af29341c3664c 12738 devel extra golang-github-go-logfmt-logfmt-dev_0.3.0-2~bpo8+1_all.deb

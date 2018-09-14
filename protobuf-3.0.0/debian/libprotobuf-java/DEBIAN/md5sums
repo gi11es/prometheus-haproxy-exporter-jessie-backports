@@ -1,0 +1,6 @@
+213ff5b07ff2fe60aa310fbc6656be9b  usr/share/doc/libprotobuf-java/changelog.Debian.gz
+76dd0d498a4c83f380b113afa23e9623  usr/share/doc/libprotobuf-java/changelog.gz
+07a2b8cfcd2ca6040efbc9b997167b50  usr/share/doc/libprotobuf-java/copyright
+63daea0b522b50fc964afdd01c50e195  usr/share/java/protobuf-3.0.0.jar
+9c6e30395bad1761cf613c6313726c7a  usr/share/maven-repo/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.pom
+a3978f2dbfb1bfca5e741f36b73d8046  usr/share/maven-repo/com/google/protobuf/protobuf-java/debian/protobuf-java-debian.pom

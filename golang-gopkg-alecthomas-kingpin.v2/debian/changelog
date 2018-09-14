@@ -1,0 +1,58 @@
+golang-gopkg-alecthomas-kingpin.v2 (2.2.6-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/compat
+    - Reduce minimum version to 10.
+  * debian/control
+    - Reduce minimum version of debhelper to 10.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 17:53:25 +0000
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Martín Ferrari ]
+  * New upstream release
+  * Stop using pristine-tar.
+  * Refresh patches.
+  * Automated cme fixes.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 24 May 2018 04:34:13 +0000
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.3-2) unstable; urgency=medium
+
+  * Bump debhelper compat level to 10
+  * Build-depend on golang-any instead of golang-go
+  * Drop dependency on golang-go from -dev package
+  * Update debian/watch to use package name for tarball
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 19 Nov 2016 23:25:22 -0500
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove Built-Using field from -dev package
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 04 Sep 2016 00:08:59 -0400
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 30 Jul 2016 23:35:36 -0400
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 17 Jul 2016 16:13:57 -0400
+
+golang-gopkg-alecthomas-kingpin.v2 (2.1.11-1) unstable; urgency=medium
+
+  * Initial release (Closes: #817103)
+
+ -- Peter Colberg <peter@colberg.org>  Tue, 08 Mar 2016 20:39:29 -0500

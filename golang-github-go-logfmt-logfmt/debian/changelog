@@ -1,0 +1,17 @@
+golang-github-go-logfmt-logfmt (0.3.0-2~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Thu, 13 Sep 2018 18:27:05 +0000
+
+golang-github-go-logfmt-logfmt (0.3.0-2) UNRELEASED; urgency=medium
+
+  * Point Vcs-* urls to salsa.debian.org.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 02 Apr 2018 16:51:13 -0400
+
+golang-github-go-logfmt-logfmt (0.3.0-1) unstable; urgency=medium
+
+  * Initial release. Closes: 876650
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 24 Sep 2017 12:26:32 +0000

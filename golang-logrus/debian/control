@@ -1,0 +1,42 @@
+Source: golang-logrus
+Section: devel
+Priority: optional
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Martín Ferrari <tincho@debian.org>,
+           Tianon Gravi <tianon@debian.org>,
+Build-Depends: debhelper (>= 10~),
+               dh-golang (>= 1.10),
+               golang-any,
+               golang-github-stretchr-testify-dev,
+               golang-golang-x-crypto-dev,
+               golang-golang-x-sys-dev,
+Standards-Version: 4.1.4
+Homepage: https://github.com/sirupsen/logrus
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-logrus.git
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-logrus
+XS-Go-Import-Path: github.com/sirupsen/logrus
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-sirupsen-logrus-dev
+Architecture: all
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: ${misc:Depends}
+        ,golang-github-stretchr-testify-dev
+        ,golang-golang-x-crypto-dev
+        ,golang-golang-x-sys-dev
+Replaces: golang-logrus-dev (<< 0.7.3-2~)
+Breaks: golang-logrus-dev (<< 0.7.3-2~)
+Provides: golang-logrus-dev
+Description: Logrus: a logging library for Go
+ Logrus is a structured logger for Go (golang), completely
+ API compatible with the standard library logger.
+ .
+ This package contains the source.
+
+Package: golang-logrus-dev
+Section: oldlibs
+Architecture: all
+Depends: golang-github-sirupsen-logrus-dev, ${misc:Depends}
+Description: Transitional package for golang-github-sirupsen-logrus-dev
+ This is a transitional package to ease upgrades to the
+ golang-github-sirupsen-logrus-dev package. It can be safely removed.

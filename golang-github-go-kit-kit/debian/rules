@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE := 1
+
+# Don't compile, test, or install a number of packages that require a big
+# number of new dependencies, at least for now.
+# Package ratelimit requires a newer version of x/time, so exclude it too.
+export DH_GOLANG_EXCLUDES := \
+    github.com/go-kit/kit/circuitbreaker \
+    github.com/go-kit/kit/examples \
+    github.com/go-kit/kit/metrics \
+    github.com/go-kit/kit/ratelimit \
+    github.com/go-kit/kit/sd
+
+%:
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_install:
+	dh_auto_install
+	# Do not install excluded packages.
+	for pkg in $(DH_GOLANG_EXCLUDES); do \
+	    rm -rf debian/*/usr/share/gocode/src/$$pkg; \
+        done

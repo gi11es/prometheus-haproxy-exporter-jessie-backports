@@ -1,0 +1,3 @@
+# These are test files that should be kept in this format.
+golang-github-prometheus-common-dev: duplicated-compressed-file usr/share/gocode/src/github.com/prometheus/common/expfmt/testdata/protobuf.gz
+golang-github-prometheus-common-dev: duplicated-compressed-file usr/share/gocode/src/github.com/prometheus/common/expfmt/testdata/text.gz

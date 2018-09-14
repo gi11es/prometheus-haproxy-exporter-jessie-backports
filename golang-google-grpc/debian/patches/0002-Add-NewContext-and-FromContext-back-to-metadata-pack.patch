@@ -1,0 +1,42 @@
+From: Shengjing Zhu <i@zhsj.me>
+Date: Thu, 14 Sep 2017 16:21:46 +0800
+Subject: Add NewContext and FromContext back to metadata package
+
+These are remove in https://github.com/grpc/grpc-go/pull/1392
+We try to not break the API since some packages in the Debian
+archive are not updated.
+
+Forwarded: not-needed
+Signed-off-by: Shengjing Zhu <i@zhsj.me>
+---
+ metadata/metadata.go | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+diff --git a/metadata/metadata.go b/metadata/metadata.go
+index ccfea5d..72f95bc 100644
+--- a/metadata/metadata.go
++++ b/metadata/metadata.go
+@@ -110,6 +110,11 @@ func Join(mds ...MD) MD {
+ type mdIncomingKey struct{}
+ type mdOutgoingKey struct{}
+ 
++// NewContext is a wrapper for NewOutgoingContext(ctx, md).  Deprecated.
++func NewContext(ctx context.Context, md MD) context.Context {
++	return NewOutgoingContext(ctx, md)
++}
++
+ // NewIncomingContext creates a new context with incoming md attached.
+ func NewIncomingContext(ctx context.Context, md MD) context.Context {
+ 	return context.WithValue(ctx, mdIncomingKey{}, md)
+@@ -120,6 +125,11 @@ func NewOutgoingContext(ctx context.Context, md MD) context.Context {
+ 	return context.WithValue(ctx, mdOutgoingKey{}, md)
+ }
+ 
++// FromContext is a wrapper for FromIncomingContext(ctx).  Deprecated.
++func FromContext(ctx context.Context) (md MD, ok bool) {
++	return FromIncomingContext(ctx)
++}
++
+ // FromIncomingContext returns the incoming metadata in ctx if it exists.  The
+ // returned MD should not be modified. Writing to it may cause races.
+ // Modification should be made to copies of the returned MD.

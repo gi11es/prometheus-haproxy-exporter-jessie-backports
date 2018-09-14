@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+# Include test fixtures.
+export DH_GOLANG_INSTALL_EXTRA := expfmt/testdata config/testdata
+
+# Remove the version package, to avoid circular dependency. These are copied
+# later using dh_install.
+export DH_GOLANG_EXCLUDES := github.com/prometheus/common/version
+
+%:
+	dh $@ --buildsystem=golang --with=golang

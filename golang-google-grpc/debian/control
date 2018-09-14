@@ -1,0 +1,43 @@
+Source: golang-google-grpc
+Section: devel
+Priority: optional
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>,
+           Martín Ferrari <tincho@debian.org>,
+           Tim Potter <tpot@hpe.com>,
+Build-Depends: debhelper (>= 10),
+               dh-golang (>= 1.17~),
+               golang-any (>= 2:1.5.1~),
+               golang-github-golang-mock-dev,
+               golang-glog-dev | golang-github-golang-glog-dev,
+               golang-golang-x-net-dev (>= 1:0.0+git20170629),
+               golang-golang-x-oauth2-dev,
+               golang-golang-x-oauth2-google-dev,
+               golang-golang-x-tools,
+               golang-goprotobuf-dev (>= 0.0~git20161116~),
+               protobuf-compiler (>= 3.0.0~),
+Standards-Version: 4.1.1
+Homepage: https://godoc.org/google.golang.org/grpc
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-google-grpc.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-google-grpc.git
+XS-Go-Import-Path: google.golang.org/grpc
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-google-grpc-dev
+Provides: golang-github-grpc-grpc-go-dev,
+Architecture: all
+Depends: golang-github-golang-mock-dev,
+         golang-glog-dev | golang-github-golang-glog-dev,
+         golang-golang-x-net-dev (>= 1:0.0+git20170629),
+         golang-golang-x-oauth2-dev,
+         golang-golang-x-oauth2-google-dev,
+         golang-google-genproto-dev,
+         golang-goprotobuf-dev (>= 0.0~git20161116~),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: implementation of gRPC in Go
+ Implementation of an RPC system called gRPC in Golang.
+ .
+ Remote Procedure Calls (RPCs) provide a useful abstraction for building
+ distributed applications and services. This library provides a concrete
+ implementation of the gRPC protocol, layered over HTTP/2.

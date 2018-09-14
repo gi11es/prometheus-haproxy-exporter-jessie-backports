@@ -1,0 +1,18 @@
+Package: golang-github-opentracing-opentracing-go-dev
+Source: golang-github-opentracing-opentracing-go
+Version: 1.0.2-2~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 139
+Depends: golang-github-stretchr-testify-dev, golang-golang-x-net-dev
+Section: devel
+Priority: extra
+Homepage: https://github.com/opentracing/opentracing-go
+Description: Go platform API for OpenTracing
+ By offering consistent, expressive, vendor-neutral APIs for popular platforms,
+ OpenTracing makes it easy for developers to add (or switch) tracing
+ implementations with an O(1) configuration change. OpenTracing also offers a
+ lingua franca for OSS instrumentation and platform-specific tracing helper
+ libraries.
+ .
+ This package is a Go platform API for OpenTracing.

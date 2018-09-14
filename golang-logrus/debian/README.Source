@@ -1,0 +1,7 @@
+# update "upstream" branch
+./debian/helpers/update-upstream-branch.sh
+
+# create new "upstream/..." tag
+./debian/helpers/tag-upstream-version.sh # to tag whatever's in d/changelog
+# or ./debian/helpers/tag-upstream-version.sh <version>
+./debian/helpers/tag-upstream-version.sh 1.2.3

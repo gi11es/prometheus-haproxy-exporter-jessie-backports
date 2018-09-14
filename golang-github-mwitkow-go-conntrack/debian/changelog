@@ -1,0 +1,36 @@
+golang-github-mwitkow-go-conntrack (0.0~git20161129.cc309e4-3~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * debian/compat
+    - Reduced minimum version to 10
+  * debian/control
+    - Reduced debhelper minimum version to 10
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Fri, 14 Sep 2018 07:16:51 +0000
+
+golang-github-mwitkow-go-conntrack (0.0~git20161129.cc309e4-3) unstable; urgency=high
+
+  * Fix flaky test. Closes: #902468 (raising severity).
+  * Update Standards-Version with no changes.
+  * Bump debhelper compat level to 11.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 30 Aug 2018 17:40:05 +0000
+
+golang-github-mwitkow-go-conntrack (0.0~git20161129.cc309e4-2) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Martín Ferrari ]
+  * Automated cme fixes.
+  * debian/docs: Add README.md
+  * debian/control: Stop using legacy package name for the prometheus
+    client.
+
+ -- Martín Ferrari <tincho@debian.org>  Mon, 18 Jun 2018 20:57:58 +0000
+
+golang-github-mwitkow-go-conntrack (0.0~git20161129.cc309e4-1) unstable; urgency=medium
+
+  * Initial release (Closes: 883898)
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 09 Dec 2017 00:30:41 +0000

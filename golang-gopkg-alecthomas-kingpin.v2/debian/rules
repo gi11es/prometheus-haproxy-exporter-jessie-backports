@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+# Exclude unneeded executables
+export DH_GOLANG_EXCLUDES := cmd
+
+%:
+	dh $@ --buildsystem=golang --with=golang

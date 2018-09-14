@@ -1,0 +1,3 @@
+misc:Built-Using=golang-1.7 (= 1.7.4-1~bpo8+2), golang-github-beorn7-perks (= 0.0~git20160804.0.4c0e845-1~bpo8+1), golang-github-prometheus-client-golang (= 0.8.0-1~bpo8+1), golang-github-prometheus-client-model (= 0.0.2+git20150212.12.fa8ad6f-2~bpo8+1), golang-github-prometheus-common (= 0+git20161002.85637ea-2~bpo8+1), golang-golang-x-net-dev (= 1:0.0+git20170629.c81e7f2+dfsg-2~bpo8+1), golang-goprotobuf (= 0.0~git20161116.0.224aaba-3~bpo8+1), golang-procfs (= 0+git20161206.fcdb11c-1~bpo8+1), golang-protobuf-extensions (= 1.0.0-2~bpo8+1), 
+misc:Depends=
+misc:Pre-Depends=

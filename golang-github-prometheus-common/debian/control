@@ -1,0 +1,57 @@
+Source: golang-github-prometheus-common
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Martín Ferrari <tincho@debian.org>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               dh-golang (>= 1.17~),
+               golang-any,
+               golang-github-go-kit-kit-dev,
+               golang-github-julienschmidt-httprouter-dev,
+               golang-github-mwitkow-go-conntrack-dev,
+               golang-github-pkg-errors-dev,
+               golang-github-prometheus-client-model-dev,
+               golang-github-sirupsen-logrus-dev (>= 1.0.2),
+               golang-golang-x-net-dev,
+               golang-gopkg-alecthomas-kingpin.v2-dev,
+               golang-goprotobuf-dev,
+               golang-protobuf-extensions-dev,
+               golang-yaml.v2-dev (>= 2.2.1),
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-prometheus-common
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-prometheus-common.git
+Homepage: https://github.com/prometheus/common
+XS-Go-Import-Path: github.com/prometheus/common
+
+Package: golang-github-prometheus-common-dev
+Architecture: all
+Depends: golang-github-go-kit-kit-dev,
+         golang-github-julienschmidt-httprouter-dev,
+         golang-github-mwitkow-go-conntrack-dev,
+         golang-github-pkg-errors-dev,
+         golang-github-prometheus-client-golang-dev,
+         golang-github-prometheus-client-model-dev,
+         golang-github-sirupsen-logrus-dev (>= 1.0.2),
+         golang-golang-x-net-dev,
+         golang-gopkg-alecthomas-kingpin.v2-dev,
+         golang-goprotobuf-dev,
+         golang-protobuf-extensions-dev,
+         golang-yaml.v2-dev,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Common libraries for Prometheus components
+ This package includes:
+ .
+  * github.com/prometheus/common/config: Common configuration structures.
+  * github.com/prometheus/common/expfmt: Decoding and encoding for the
+    exposition format.
+  * github.com/prometheus/common/log: Wraps https://github.com/Sirupsen/logrus
+    in order to add line:file annotations to log lines, as well as to provide
+    common command-line flags for Prometheus components using it.
+  * github.com/prometheus/common/model: Shared data structures.
+  * github.com/prometheus/common/promlog: Defines standardised ways to
+    initialize Go kit loggers across Prometheus components.
+  * github.com/prometheus/common/route: A routing wrapper around
+    https://github.com/julienschmidt/httprouter using `context.Context`.
+  * github.com/prometheus/common/version: Version information and metrics.

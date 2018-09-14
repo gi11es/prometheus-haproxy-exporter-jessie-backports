@@ -1,0 +1,60 @@
+Format: 1.8
+Date: Fri, 14 Sep 2018 05:41:42 +0000
+Source: protobuf
+Binary: libprotobuf10 libprotobuf-lite10 libprotobuf-dev libprotoc10 libprotoc-dev protobuf-compiler python-protobuf python3-protobuf libprotobuf-java
+Architecture: source amd64 all
+Version: 3.0.0-9.1~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian protobuf maintainers <pkg-protobuf-devel@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ libprotobuf-dev - protocol buffers C++ library (development files)
+ libprotobuf-java - Java bindings for protocol buffers
+ libprotobuf-lite10 - protocol buffers C++ library (lite version)
+ libprotobuf10 - protocol buffers C++ library
+ libprotoc-dev - protocol buffers compiler library (development files)
+ libprotoc10 - protocol buffers compiler library
+ protobuf-compiler - compiler for protocol buffer definition files
+ python-protobuf - Python bindings for protocol buffers
+ python3-protobuf - Python 3 bindings for protocol buffers
+Changes:
+ protobuf (3.0.0-9.1~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 9dd1e4865b8327d7ec1a3a93ec3c06fe81e29613 2046 protobuf_3.0.0-9.1~bpo8+1.dsc
+ 9eb3eb6237100999b20c5ce8aaffc35d249fbc47 23992 protobuf_3.0.0-9.1~bpo8+1.debian.tar.xz
+ 68bfa880092d17df68de1c296f22f575fa42bae1 734388 libprotobuf10_3.0.0-9.1~bpo8+1_amd64.deb
+ 5ac7a579f9ffce6371a27c97c043f2a7252cff2f 132080 libprotobuf-lite10_3.0.0-9.1~bpo8+1_amd64.deb
+ 07abbf2e009079887da9f4305f713786ae74a615 1000910 libprotobuf-dev_3.0.0-9.1~bpo8+1_amd64.deb
+ 31d9049871e31d3f26176f939f2ca5d4331022f2 691752 libprotoc10_3.0.0-9.1~bpo8+1_amd64.deb
+ 273b5b55db7decd083f68f1402b1427c3224bfe8 766502 libprotoc-dev_3.0.0-9.1~bpo8+1_amd64.deb
+ f75222c06b73887940566ea3fdac6cd1c12a7593 53274 protobuf-compiler_3.0.0-9.1~bpo8+1_amd64.deb
+ aff9702dbc9ee8d137f48a7ee53f4cd864b84da4 292932 python-protobuf_3.0.0-9.1~bpo8+1_amd64.deb
+ 775d9791e6f55f2cb9757cf49a5281e23036019f 292802 python3-protobuf_3.0.0-9.1~bpo8+1_amd64.deb
+ 98113205849b918683e430f85a7a950c5673d3b0 644986 libprotobuf-java_3.0.0-9.1~bpo8+1_all.deb
+Checksums-Sha256:
+ 0e1f1d6f5180112d382de58fb904268d227f3baccec138253d400fda53386f7c 2046 protobuf_3.0.0-9.1~bpo8+1.dsc
+ db778dd316fc368318353cea00eede7867f1a5bfc9065f4d3b3e0f4d9cd86e94 23992 protobuf_3.0.0-9.1~bpo8+1.debian.tar.xz
+ 32bb7dfdca3108ca09af48f33eca2c89f0450d8dc9385a897570819fba2a7b37 734388 libprotobuf10_3.0.0-9.1~bpo8+1_amd64.deb
+ ab2438d424769cde227adc0791cf394f7c6d8f09bf102dc948d47422f8ee5f6d 132080 libprotobuf-lite10_3.0.0-9.1~bpo8+1_amd64.deb
+ 16684331de78a0bc803ae97574372c393bb0f8ffe23b5fb9cac6fd7462e80635 1000910 libprotobuf-dev_3.0.0-9.1~bpo8+1_amd64.deb
+ 04093dcb099ab2f62f5126ab4ff374c6fad955effbd6ae13394565f0baeaf0db 691752 libprotoc10_3.0.0-9.1~bpo8+1_amd64.deb
+ 4da446a6bc546f44cdb4c4d4a93a76219824c956dc4d6af2ff16ed6a1590554d 766502 libprotoc-dev_3.0.0-9.1~bpo8+1_amd64.deb
+ 7831f6f0ba19a617ceeac7bdcb8b4e84090b34b7c81dfe82b33476728ebe5fe5 53274 protobuf-compiler_3.0.0-9.1~bpo8+1_amd64.deb
+ 0a8fa0ba82324772d3e20736fd93ccb185ae7848518376faabbf21fa5093d4d0 292932 python-protobuf_3.0.0-9.1~bpo8+1_amd64.deb
+ 1d1cf6dea6d4f4df659448978068c877aa13dd078ed75a856a9c7d15ca187e74 292802 python3-protobuf_3.0.0-9.1~bpo8+1_amd64.deb
+ 2c4ea0fc1df77e3fbc5f8d81e964ea67cdf3e6a74436f75997543217d8ef9619 644986 libprotobuf-java_3.0.0-9.1~bpo8+1_all.deb
+Files:
+ 2c7e501deae3abd52e8f0869232937fb 2046 devel optional protobuf_3.0.0-9.1~bpo8+1.dsc
+ 640a5ca35b0a834e1327cf01851a2995 23992 devel optional protobuf_3.0.0-9.1~bpo8+1.debian.tar.xz
+ 9ee4f65b402d154098c7b750b78af939 734388 libs optional libprotobuf10_3.0.0-9.1~bpo8+1_amd64.deb
+ a92a5d38eb7b53eff5afcc34108ed32a 132080 libs optional libprotobuf-lite10_3.0.0-9.1~bpo8+1_amd64.deb
+ 5822822594c9d997b2fed9c421982244 1000910 libdevel optional libprotobuf-dev_3.0.0-9.1~bpo8+1_amd64.deb
+ 3c3ccca670a3c5e6c4aa01dbb8420384 691752 libs optional libprotoc10_3.0.0-9.1~bpo8+1_amd64.deb
+ d91f700901cb8e3309bd50575e8dcd8e 766502 libdevel optional libprotoc-dev_3.0.0-9.1~bpo8+1_amd64.deb
+ 44da143796dd18f5ec8db71e7750fe3c 53274 devel optional protobuf-compiler_3.0.0-9.1~bpo8+1_amd64.deb
+ 1a993d330802c8db99a99bd43f4abe98 292932 python optional python-protobuf_3.0.0-9.1~bpo8+1_amd64.deb
+ 42dbbf604900c26aa36a5ba8cc4fc7e8 292802 python optional python3-protobuf_3.0.0-9.1~bpo8+1_amd64.deb
+ 16ab2cb48ff03576315c932c855004da 644986 java optional libprotobuf-java_3.0.0-9.1~bpo8+1_all.deb

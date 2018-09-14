@@ -1,0 +1,23 @@
+Description: Patch the import names to use JWT v3 package.
+--- a/auth/jwt/middleware.go
++++ b/auth/jwt/middleware.go
+@@ -4,7 +4,7 @@
+ 	"context"
+ 	"errors"
+ 
+-	jwt "github.com/dgrijalva/jwt-go"
++	jwt "github.com/dgrijalva/jwt-go-v3"
+ 
+ 	"github.com/go-kit/kit/endpoint"
+ )
+--- a/auth/jwt/middleware_test.go
++++ b/auth/jwt/middleware_test.go
+@@ -8,7 +8,7 @@
+ 
+ 	"crypto/subtle"
+ 
+-	jwt "github.com/dgrijalva/jwt-go"
++	jwt "github.com/dgrijalva/jwt-go-v3"
+ 	"github.com/go-kit/kit/endpoint"
+ )
+ 

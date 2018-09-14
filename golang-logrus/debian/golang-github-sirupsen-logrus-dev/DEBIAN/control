@@ -1,0 +1,19 @@
+Package: golang-github-sirupsen-logrus-dev
+Source: golang-logrus
+Version: 1.0.6-1~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 160
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: golang-github-stretchr-testify-dev, golang-golang-x-crypto-dev, golang-golang-x-sys-dev
+Breaks: golang-logrus-dev (<< 0.7.3-2~)
+Replaces: golang-logrus-dev (<< 0.7.3-2~)
+Provides: golang-logrus-dev
+Section: devel
+Priority: optional
+Homepage: https://github.com/sirupsen/logrus
+Description: Logrus: a logging library for Go
+ Logrus is a structured logger for Go (golang), completely
+ API compatible with the standard library logger.
+ .
+ This package contains the source.

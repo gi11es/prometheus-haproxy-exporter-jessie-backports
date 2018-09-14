@@ -1,0 +1,12 @@
+Description: Add a small delay to allow metrics to be collected; otherwise this
+    test fails under high CPU contention.
+--- a/listener_test.go
++++ b/listener_test.go
+@@ -78,6 +78,7 @@
+ 	assert.Equal(s.T(), beforeClosed, sumCountersForMetricAndLabels(s.T(), "net_conntrack_listener_conn_closed_total", listenerName),
+ 		"the closed conn counter must not be incremented before the connection is closed")
+ 	conn.Close()
++	time.Sleep(5 * time.Millisecond)
+ 	assert.Equal(s.T(), beforeClosed+1, sumCountersForMetricAndLabels(s.T(), "net_conntrack_listener_conn_closed_total", listenerName),
+ 		"the closed conn counter must be incremented after connection was closed")
+ }

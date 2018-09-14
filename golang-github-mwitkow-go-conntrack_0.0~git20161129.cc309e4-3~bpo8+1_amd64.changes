@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 14 Sep 2018 07:16:51 +0000
+Source: golang-github-mwitkow-go-conntrack
+Binary: golang-github-mwitkow-go-conntrack-dev
+Architecture: source all
+Version: 0.0~git20161129.cc309e4-3~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-mwitkow-go-conntrack-dev - Go middleware for net.Conn tracking
+Changes:
+ golang-github-mwitkow-go-conntrack (0.0~git20161129.cc309e4-3~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 0315054e0ebb146734b97a56578a446de2788b53 1694 golang-github-mwitkow-go-conntrack_0.0~git20161129.cc309e4-3~bpo8+1.dsc
+ 573cce792522f8fb41d300ebb89a13406fc1e445 3296 golang-github-mwitkow-go-conntrack_0.0~git20161129.cc309e4-3~bpo8+1.debian.tar.xz
+ 658829d4cecbd8f4f44d4900942a88052d3bd538 14168 golang-github-mwitkow-go-conntrack-dev_0.0~git20161129.cc309e4-3~bpo8+1_all.deb
+Checksums-Sha256:
+ df1fe415f58aa2a76d9a6705a871fa8e1a51291ed266f9c80cee6020faf50e98 1694 golang-github-mwitkow-go-conntrack_0.0~git20161129.cc309e4-3~bpo8+1.dsc
+ 582a5bc95468d44921b0dd59fe3c61d5726f071c67f64942f3cc2a1bb7dee13b 3296 golang-github-mwitkow-go-conntrack_0.0~git20161129.cc309e4-3~bpo8+1.debian.tar.xz
+ f533ba3c6d9de8ffd40206cc445806f1a63b7e740208c5e3ecee5c2e7738f885 14168 golang-github-mwitkow-go-conntrack-dev_0.0~git20161129.cc309e4-3~bpo8+1_all.deb
+Files:
+ c05e05c57de21fc4a2db0ba8e795938e 1694 devel optional golang-github-mwitkow-go-conntrack_0.0~git20161129.cc309e4-3~bpo8+1.dsc
+ 2c62b012100835e48c9130b632e3d751 3296 devel optional golang-github-mwitkow-go-conntrack_0.0~git20161129.cc309e4-3~bpo8+1.debian.tar.xz
+ 3bb565e6f44ec57ae67c5700bcd347b2 14168 devel optional golang-github-mwitkow-go-conntrack-dev_0.0~git20161129.cc309e4-3~bpo8+1_all.deb

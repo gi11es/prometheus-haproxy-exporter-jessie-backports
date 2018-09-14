@@ -1,0 +1,17 @@
+Package: golang-github-go-stack-stack-dev
+Source: golang-github-go-stack-stack
+Version: 1.5.2-3~bpo8+1
+Architecture: all
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Installed-Size: 64
+Section: devel
+Priority: extra
+Homepage: http://github.com/go-stack/stack
+Description: capture, manipulate, and format call stacks
+ Package stack implements utilities to capture, manipulate,
+ and format call stacks. It provides a simpler API than
+ package runtime.
+ .
+ The implementation takes care of the minutia and special
+ cases of interpreting the program counter (pc) values
+ returned by runtime.Callers.

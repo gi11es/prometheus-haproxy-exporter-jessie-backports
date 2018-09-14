@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 18:25:31 +0000
+Source: golang-github-dgrijalva-jwt-go-v3
+Binary: golang-github-dgrijalva-jwt-go-v3-dev
+Architecture: source all
+Version: 3.1.0-2~bpo8+1
+Distribution: jessie-backports
+Urgency: medium
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Changed-By: Gilles Dubuc <gilles@wikimedia.org>
+Description:
+ golang-github-dgrijalva-jwt-go-v3-dev - Golang implementation of JSON Web Tokens (JWT)
+Changes:
+ golang-github-dgrijalva-jwt-go-v3 (3.1.0-2~bpo8+1) jessie-backports; urgency=medium
+ .
+   * Rebuild for jessie-backports.
+Checksums-Sha1:
+ 4b9e467e351dd8b86dc31cb5edf7f0ba280a60ce 1446 golang-github-dgrijalva-jwt-go-v3_3.1.0-2~bpo8+1.dsc
+ d0cb7b06f729a6a3098b05adfe7e82c5acf70b20 3148 golang-github-dgrijalva-jwt-go-v3_3.1.0-2~bpo8+1.debian.tar.xz
+ bff14ea4ca864716eba4ec6796263b940f153e89 29916 golang-github-dgrijalva-jwt-go-v3-dev_3.1.0-2~bpo8+1_all.deb
+Checksums-Sha256:
+ 5d35ec37f498c8cda99bd871cd092996ab0e0819484ae691a9a74b4dd37ede11 1446 golang-github-dgrijalva-jwt-go-v3_3.1.0-2~bpo8+1.dsc
+ f5e66a3ccaf0cb9b031f8689207371c2c7c98e2bdfddf30351ea0e8034e8ab42 3148 golang-github-dgrijalva-jwt-go-v3_3.1.0-2~bpo8+1.debian.tar.xz
+ 3d5691b4c0f65a30e900f8a565fbc41e2c9a4c0429da0057e888c3cd54db3843 29916 golang-github-dgrijalva-jwt-go-v3-dev_3.1.0-2~bpo8+1_all.deb
+Files:
+ fcfc13f278795206171d770f9a8a737b 1446 devel optional golang-github-dgrijalva-jwt-go-v3_3.1.0-2~bpo8+1.dsc
+ 47795c1d7e887d2008f2256a5268b1e3 3148 devel optional golang-github-dgrijalva-jwt-go-v3_3.1.0-2~bpo8+1.debian.tar.xz
+ 2050203830fe22b8f69af27ee146ae3a 29916 devel optional golang-github-dgrijalva-jwt-go-v3-dev_3.1.0-2~bpo8+1_all.deb

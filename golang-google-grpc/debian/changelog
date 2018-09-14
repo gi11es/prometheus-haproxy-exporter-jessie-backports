@@ -1,0 +1,135 @@
+golang-google-grpc (1.6.0-3~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Gilles Dubuc <gilles@wikimedia.org>  Fri, 14 Sep 2018 07:06:28 +0000
+
+golang-google-grpc (1.6.0-3~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 21 Dec 2017 05:01:08 +0000
+
+golang-google-grpc (1.6.0-3) unstable; urgency=medium
+
+  [ Shengjing Zhu ]
+  * Team upload.
+  * remove codes/code_string.go before running go generate (Closes: #882554).
+    codes/code_string.go is also generated file. running go generate on
+    file codes/codes.go will cause stringer to process all files in
+    dir codes, including this generated file.
+
+  [ Dr. Tobias Quathamer ]
+  * Update Standards-Version to 4.1.1, no changes needed
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 05 Dec 2017 23:19:44 +0100
+
+golang-google-grpc (1.6.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add patch to bring NewContext and FromContext API back.
+
+ -- Shengjing Zhu <i@zhsj.me>  Thu, 14 Sep 2017 20:39:58 +0800
+
+golang-google-grpc (1.6.0-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * New upstream release.
+  * Testsuite: autopkgtest-pkg-go.
+  * Bump Standards-Version to 4.0.0.
+  * Depend on golang-github-golang-mock-dev.
+
+  [ Shengjing Zhu ]
+  * New upstream 1.6.0 release
+  * Refresh patch name
+  * Call go generate manualy in d/rules
+  * Update new version's build-depends
+  * Update compat and dh to 10
+  * Update Standards-Version to 4.1.0
+    + Change priority to optional
+    + Use https in copyright format url
+  * Remove d/README.Debian, naming/etcd no longer exists
+  * Update pkg-go team name
+
+ -- Martín Ferrari <tincho@debian.org>  Wed, 13 Sep 2017 03:04:56 +0000
+
+golang-google-grpc (1.0.4-1) unstable; urgency=medium
+
+  * Add myself to Uploaders.
+  * Re-merge upstream.
+  * Make the build reproducible, thanks to Chris Lamb for the patch.
+    Closes: #838754
+  * debian/control: Remove golang-go dependency from -dev package.
+  * debian/control: Switch to golang-any.
+  * debian/control: Depend on recent dh-golang.
+  * Use XS-Go-Import-Path instead of DH_GOPKG.
+  * debian/rules: Remove now unneeded get-orig-source target.
+  * debian/control: Update oauth2/google dependency.
+  * Add Documentation/.
+  * Add missing test files, do not exclude tests, run manually
+    grpc/test.
+  * Do not install sample executables.
+  * New upstream release. Increase required version of goprotobuf.
+  * Patch tests that access the network.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 19 Nov 2016 05:42:29 +0000
+
+golang-google-grpc (1.0.0-1) unstable; urgency=medium
+
+  * New upstream release [July 2016].
+  * Build-Depends:
+    = golang-goprotobuf-dev (>= 0.0~git20160815~)
+    + protobuf-compiler (>= 3.0.0~)
+  * Re-build .pb.go files from .proto sources.
+  * Do not ignore test failures.
+  * "--parallel" build.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Wed, 24 Aug 2016 17:54:38 +1000
+
+golang-google-grpc (0.0~git20160517.0.a22b6611-2) unstable; urgency=medium
+
+  [ Tim Potter ]
+  * Update golang-go B-D to backport version, 1.5.1 or higher
+  * Add me as uploader
+
+  [ Dmitry Smirnov ]
+  * (Build-)Depends: fixed order of alternatives (Closes: #830325).
+  * Added README.source with note about versioning error.
+  * Removed needless "Built-Using".
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 10 Jul 2016 08:44:21 +1000
+
+golang-google-grpc (0.0~git20160517.0.a22b6611-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Fixed Vcs-Git URL.
+  * Ignore test failures.
+  * Standards-Version: 3.9.8.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Tue, 24 May 2016 11:46:44 +1000
+
+golang-google-grpc (0.0~git20151002.0.3e7b7e5-1) unstable; urgency=medium
+
+  [ Tim Potter <tpot@hpe.com> ]
+  * Update to commit 3e7b7e5 from upstream (Closes: #806179)
+  * Replace golang-github-bradfitz-http2-dev B-D with updated version of
+    golang-golang-x-net-dev, and upgrade golang-golang-x-oauth2-dev.
+
+  [ Dmitry Smirnov <onlyjob@debian.org> ]
+  * rules: DH_GOLANG_EXCLUDES += "naming/etcd": to avoid curcular
+    dependency on "golang-etcd-server-dev" which depends on this package
+    ("golang-google-grpc"); Added related note to "README.Debian".
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 07 Feb 2016 13:58:30 +1100
+
+golang-google-grpc (0.0~git20150514.0.f5ebd86-2) unstable; urgency=medium
+
+  * Drop etcd dependencies (Closes: #808598).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Tue, 22 Dec 2015 00:00:04 +1100
+
+golang-google-grpc (0.0~git20150514.0.f5ebd86-1) unstable; urgency=medium
+
+  * Initial release (Closes: #798654).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 11 Sep 2015 22:28:08 +1000
